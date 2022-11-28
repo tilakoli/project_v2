@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import ParticlesEffect from "../Components/ParticlesEffect";
 import Layout from "../Layout";
+import Homepage from "../Components/Homepage";
 
 export default function Home() {
   return (
@@ -9,7 +8,9 @@ export default function Home() {
       <Head>
         <title>Kagami</title>
       </Head>
-      <Layout></Layout>
+      <Layout>
+        <Homepage />
+      </Layout>
     </div>
   );
 }

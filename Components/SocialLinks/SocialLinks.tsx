@@ -8,7 +8,7 @@ const SocialLinks = () => {
   return (
     <div className="flex items-center justify-end h-full gap-5 text-2xl text-white md:pr-8 md:flex-col pb-14">
       <div className="hidden h-56 border md:block"></div>
-      <div className="w-24 border md:hidden"></div>
+      <div className="border w-14 md:hidden"></div>
 
       <div className="hover:cursor-pointer hover:text-blue-500">
         <Link href="https://facebook.com">
@@ -38,7 +38,7 @@ const SocialLinks = () => {
           </a>
         </Link>
       </div>
-      <div className="w-24 border md:hidden"></div>
+      <div className="border w-14 md:hidden"></div>
     </div>
   );
 };
