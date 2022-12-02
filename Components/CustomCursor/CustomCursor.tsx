@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-const CustomCursor = ({ hideCursor }) => {
+const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
