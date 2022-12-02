@@ -16,7 +16,7 @@ const Index = ({ children }) => {
           <Sidebar />
         </div>
 
-        <div className="w-full h-full">{children}</div>
+        <div className="w-full h-full md:pl-56">{children}</div>
         <CustomCursor />
       </div>
     </div>

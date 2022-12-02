@@ -8,7 +8,7 @@ import { NavigationData } from "./navigationData";
 const MainSidebar = () => {
   return (
     <>
-      <div className="hidden h-screen text-white transition-all duration-700 md:flex-col md:flex text-creamyWhite md:w-56 backdrop-blur-sm bg-black/30">
+      <div className="hidden h-[100vh] fixed transition-all duration-700 md:flex-col md:flex text-creamyWhite md:w-56 backdrop-blur-sm bg-black/30">
         <div className="flex items-center justify-center border-b-8 border-creamyWhite h-[17%] ">
           Top
         </div>
