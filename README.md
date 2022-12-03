@@ -9,3 +9,5 @@
 ### Note:
 
 -Keep in mind about the responsiveness at md:768px lg:1024px looks really bad in the current state.
+
+- Learn typescript for the sake of this project please!

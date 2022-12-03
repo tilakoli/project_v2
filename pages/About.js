@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import Layout from "../Layout/index";
-
+import CustomCursor from "../Components/CustomCursor/CustomCursor";
 const About = () => {
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const [isCursorHidden, setIsCursorHidden] = useState(false);
+
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
+
   const handleCvDownload = () => {
     console.log("download");
   };
   return (
     <div>
+      {/* <CustomCursor cursorVariant={cursorVariant} isHidden={isCursorHidden} /> */}
       <Layout>
         <div className="z-50 flex flex-col items-center justify-center h-full min-w-full mb-12 ">
           <div className="h-full w-full  md:w-[70%] flex items-start flex-col pt-24 px-5 md:px-0 gap-5">
@@ -23,10 +30,16 @@ const About = () => {
               <img
                 src="/aboutImage.png"
                 alt="User profile picture"
-                className="w-full h-full"
+                className="w-full h-full hover:cursor-none"
+                // onMouseEnter={textEnter}
+                // onMouseLeave={textLeave}
               />
             </div>
-            <div className="text-white ">
+            <div
+              className="text-white "
+              // onMouseEnter={textEnter}
+              // onMouseLeave={textLeave}
+            >
               <h1 className="text-2xl md:text-4xl">Tilak Oli</h1>
               <h3 className="text-gray-400 text-md md:text-xl">
                 Web Developer
@@ -50,6 +63,8 @@ const About = () => {
               </p>
               <br />
               <button
+                onMouseEnter={() => setIsCursorHidden(true)}
+                onMouseLeave={() => setIsCursorHidden(false)}
                 onClick={handleCvDownload}
                 className="p-5 text-black uppercase bg-white cursor-none hover:border hover:border-white hover:bg-black/50 backdrop-blur-sm hover:text-white"
               >

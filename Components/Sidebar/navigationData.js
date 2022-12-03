@@ -19,23 +19,24 @@ export const NavigationData = [
     datafor: "about",
   },
   {
-    Name: "Resume",
-    link: "/Resume",
-    icon: <RiProfileFill />,
-    datafor: "resume",
+    Name: "Blogs",
+    link: "/Blogs",
+    icon: <GiNotebook />,
+    datafor: "blogs",
   },
+  // {
+  //   Name: "Resume",
+  //   link: "/Resume",
+  //   icon: <RiProfileFill />,
+  //   datafor: "resume",
+  // },
   {
     Name: "My Work",
     link: "/Work",
     icon: <MdOutlineWork />,
     datafor: "work",
   },
-  {
-    Name: "Blogs",
-    link: "/Blogs",
-    icon: <GiNotebook />,
-    datafor: "blogs",
-  },
+
   {
     Name: "Contact Me",
     link: "/ContactMe",

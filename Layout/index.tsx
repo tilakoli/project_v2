@@ -17,7 +17,7 @@ const Index = ({ children }) => {
         </div>
 
         <div className="w-full h-full md:pl-56">{children}</div>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
       </div>
     </div>
   );
