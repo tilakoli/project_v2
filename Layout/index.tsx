@@ -4,11 +4,9 @@ import Sidebar from "../Components/Sidebar";
 import CustomCursor from "../Components/CustomCursor/CustomCursor";
 const Index = ({ children }) => {
   return (
-    <div>
+    <div className="bg-black/80">
       {/* ---------------background particles effect------------ */}
-      <div className="-z-50">
-        <ParticlesEffect />
-      </div>
+      <div className="-z-50">{/* <ParticlesEffect /> */}</div>
 
       {/* -----------main body --------- */}
       <div className="flex flex-col md:flex-row">
