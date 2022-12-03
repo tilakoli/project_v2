@@ -6,7 +6,7 @@ import { NavigationData } from "./navigationData";
 const MobileSidebar = () => {
   return (
     <>
-      <div className="h-[calc(100vh-2.8rem)] w-screen bg-gray-600  fixed top-0 left-0">
+      <div className="h-[calc(100vh-2.8rem)] w-screen bg-gray-600 fixed top-0 left-0 z-50">
         <div className="flex flex-col items-center justify-between text-[2rem] h-full">
           <div className="flex flex-col items-start justify-center h-full gap-5 text-left ">
             {NavigationData.map((elem) => {
