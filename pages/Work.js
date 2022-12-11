@@ -41,7 +41,7 @@ const Work = () => {
       <div className="z-50 flex flex-col items-center justify-center h-full min-w-full md:mb-12 ">
         <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-8 pb-8 px-5 md:px-10 gap-5 ">
           <div className="flex items-center justify-end w-full ">
-            <div className="w-full md:w-[80%] ">
+            <div className="w-full md:w-[80%]  mt-8 ">
               <div className="flex gap-3 md:pr-10 md:justify-end">
                 {tabs.map((tab, i) => (
                   <button
@@ -57,17 +57,17 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-start w-full p-5 mt-0 text-white rounded-md bg-black/50 backdrop-blur-sm md:mt-16">
+          <div className="flex items-center justify-start w-full mt-0 text-white rounded-md md:p-5 bg-black/50 backdrop-blur-sm md:mt-16">
             <div className="w-full">
               <div className="content">
                 {tabs.map((tab, i) => (
                   <div key={i}>
                     {currentTab === `${tab.id}` && (
                       <div>
-                        <p className="text-white text-lg mb-[15px] font-bold">
+                        <p className="text-white text-lg mb-[15px] font-bold p-2">
                           {tab.title}
                         </p>
-                        <p className="px-[50px] py-[80px] font-medium text-xl text-justify">
+                        <p className="md:px-[50px] md:py-[80px] font-medium text-xl text-start p-2">
                           {tab.content}
                         </p>
                       </div>

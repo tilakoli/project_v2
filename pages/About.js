@@ -93,7 +93,7 @@ const About = () => {
       {/* <CustomCursor cursorVariant={cursorVariant} isHidden={isCursorHidden} /> */}
       <Layout>
         <div className="z-50 flex flex-col items-center justify-center h-full min-w-full md:mb-12 ">
-          <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-8 pb-8 px-5 md:px-10 gap-5 ">
+          <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
             {/* //bg-gray-400/40 */}
             <div className="p-2 rounded-sm bg-white/50 text-black/50 backdrop-blur-sm">
@@ -127,18 +127,21 @@ const About = () => {
             <hr className="hidden w-full h-[2px] bg-white/50 md:block mt-5 mb-4" />
             <div className="text-white text-md md:text-xl">
               <p>
-                Hi, my name is Tilak Oli and I began using React about 3 years
-                ago. I’ve spent most of my waking hours for the last ten years
-                designing, programming and operating React sites.
+                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
+                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
+                amet, consectetur adip occure lorem ipsum dolor sit amet,
               </p>
               <br />
               <p>
-                One of my specialties is taking an idea from scratch and
-                creating a full-fledged platform. I go beyond to produce sites
-                with a unique, outstanding, contemporary look-and-feel. With
-                extensive knowledge of web mechanics, I’m able to optimize
-                complex integrations to require little-to-no maintenance while
-                running on their own for years.
+                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
+                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
+                amet, consectetur adip occure lorem ipsum dolor sit amet,
+                consectetur adip occure lorem ipsum dolor sit amet, consectetur
+                adip occure. adip occure lorem ipsum dolor sit amet, consectetur
+                adip occure lorem ipsum dolor sit amet, consectetur adip occure
+                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
+                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
+                amet,
               </p>
               <br />
               {/* -----------------------personal Details --------------------
