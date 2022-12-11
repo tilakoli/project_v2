@@ -40,7 +40,7 @@ const Blogs = () => {
               My Blogs
             </h2>
           </div>
-          <div className="flex flex-col w-full md:grid gap-y-10 md:grid-flow-row md:grid-cols-2 md:gap-x-10 md:gap-y-14">
+          <div className="flex flex-col w-full md:grid gap-y-5 md:grid-flow-row md:grid-cols-2 md:gap-x-10">
             {blogsData.map((elem, index) => {
               return (
                 <div key={index} className="flex flex-row gap-5">
