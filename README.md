@@ -16,3 +16,8 @@
 - create a showCase Component to be used in about page skillsShowcase
 - need colors for backgrounds for showcase and Blogs Card that'll blend in perfectly as
   glassmorphosim not to striking but calm and pleasing colors maybe darker shades.
+
+- NectoPhile : who loves darkness
+- Pluviophile: loves rain
+- ThallassoPhile : Someone who loves the sea
+- logophile: a lover of words.
