@@ -147,11 +147,8 @@ const About = () => {
                 <div className="flex flex-col w-full h-full gap-2 text-white md:w-1/2 md:gap-3">
                   {personalData.map((elem, index) => {
                     return (
-                      <div className="flex flex-col gap-2 md:gap-3">
-                        <div
-                          className="flex gap-2 text-lg md:text-xl"
-                          key={index}
-                        >
+                      <div className="flex flex-col gap-2 md:gap-3" key={index}>
+                        <div className="flex gap-2 text-lg md:text-xl">
                           <div className="text-gray-300">{elem.label}:</div>
                           <div>{elem.value}</div>
                         </div>
@@ -162,11 +159,8 @@ const About = () => {
                 <div className="flex w-full h-full text-white md:w-1/2">
                   {personalDetail2.map((elem, index) => {
                     return (
-                      <div className="flex flex-col gap-2 md:gap-3">
-                        <div
-                          className="flex gap-2 text-lg md:text-xl"
-                          key={index}
-                        >
+                      <div className="flex flex-col gap-2 md:gap-3" key={index}>
+                        <div className="flex gap-2 text-lg md:text-xl">
                           <div className="text-gray-300">{elem.label}:</div>
                           <div>{elem.value}</div>
                         </div>
@@ -195,11 +189,8 @@ const About = () => {
                 </div>
                 {skills.map((elem, index) => {
                   return (
-                    <div className="flex flex-col gap-2 md:gap-3">
-                      <div
-                        className="flex gap-2 text-lg md:text-xl"
-                        key={index}
-                      >
+                    <div className="flex flex-col gap-2 md:gap-3" key={index}>
+                      <div className="flex gap-2 text-lg md:text-xl">
                         <div className="text-gray-300">
                           {elem.languageName}:
                         </div>
@@ -217,11 +208,8 @@ const About = () => {
                 </div>
                 {Languages.map((elem, index) => {
                   return (
-                    <div className="flex flex-col gap-2 md:gap-3">
-                      <div
-                        className="flex gap-2 text-lg md:text-xl"
-                        key={index}
-                      >
+                    <div className="flex flex-col gap-2 md:gap-3" key={index}>
+                      <div className="flex gap-2 text-lg md:text-xl">
                         <div className="text-gray-300">{elem.language}:</div>
                         <progress
                           value={elem.languageProficiency}
@@ -241,11 +229,8 @@ const About = () => {
                 </div>
                 {Knowledge.map((e, i) => {
                   return (
-                    <div className="flex flex-col gap-2 md:gap-3">
-                      <div
-                        className="flex items-center gap-2 text-lg capitalize md:text-xl"
-                        key={i}
-                      >
+                    <div className="flex flex-col gap-2 md:gap-3" key={i}>
+                      <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
                         <div className="text-gray-300">
                           <MdArrowForwardIos />
                         </div>
@@ -261,11 +246,8 @@ const About = () => {
                 </div>
                 {Interests.map((e, i) => {
                   return (
-                    <div className="flex flex-col gap-2 md:gap-3">
-                      <div
-                        className="flex items-center gap-2 text-lg capitalize md:text-xl"
-                        key={i}
-                      >
+                    <div className="flex flex-col gap-2 md:gap-3" key={i}>
+                      <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
                         <div className="text-gray-300">
                           <MdArrowForwardIos />
                         </div>
