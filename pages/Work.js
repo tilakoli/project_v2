@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Layout from "../Layout";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-
+import TestCard from "../Components/Card/TestCard";
+import TesxtAnimation from "../Components/TextAnimation/TextAnimation";
 const Work = () => {
   const [currentTab, setCurrentTab] = useState("1");
   const tabs = [
@@ -40,43 +41,15 @@ const Work = () => {
     <Layout>
       <div className="z-50 flex flex-col items-center justify-center h-full min-w-full md:mb-12 ">
         <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-8 pb-8 px-5 md:px-10 gap-5 ">
-          <div className="flex items-center justify-end w-full ">
-            <div className="w-full md:w-[80%]  mt-8 ">
-              <div className="flex gap-3 md:pr-10 md:justify-end">
-                {tabs.map((tab, i) => (
-                  <button
-                    className=" text-[#888888] py-2 w-28 rounded-md  cursor-pointer border transition-all duration-500 ease-out hover:text-white hover:bg-gray-300 tab-button "
-                    key={i}
-                    id={tab.id}
-                    disabled={currentTab === `${tab.id}`}
-                    onClick={handleTabClick}
-                  >
-                    {tab.tabTitle}
-                  </button>
-                ))}
-              </div>
-            </div>
+          <div className="p-2 text-white rounded-sm bg-white/50 backdrop-blur-sm">
+            <p>Projects</p>
           </div>
-          <div className="flex items-center justify-start w-full mt-0 text-white rounded-md md:p-5 bg-black/50 backdrop-blur-sm md:mt-16">
-            <div className="w-full">
-              <div className="content">
-                {tabs.map((tab, i) => (
-                  <div key={i}>
-                    {currentTab === `${tab.id}` && (
-                      <div>
-                        <p className="text-white text-lg mb-[15px] font-bold p-2">
-                          {tab.title}
-                        </p>
-                        <p className="md:px-[50px] md:py-[80px] font-medium text-xl text-start p-2">
-                          {tab.content}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-white md:text-5xl">
+              My Projects
+            </h2>
           </div>
+          <TestCard />
         </div>
       </div>
     </Layout>
