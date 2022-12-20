@@ -10,28 +10,28 @@ const SocialLinks = () => {
       <div className="hidden h-56 border md:block"></div>
       <div className="border w-14 md:hidden"></div>
 
-      <div className="hover:cursor-pointer hover:text-blue-500">
+      <div className="hover:cursor-pointer hover:text-secondary">
         <Link href="https://facebook.com">
           <a target="_blank">
             <ImFacebook />
           </a>
         </Link>
       </div>
-      <div className="hover:cursor-pointer hover:text-blue-500">
+      <div className="hover:cursor-pointer hover:text-secondary">
         <Link href="https://instagram.com">
           <a target="_blank">
             <BsInstagram />
           </a>
         </Link>
       </div>
-      <div className="hover:cursor-pointer hover:text-blue-500">
+      <div className="hover:cursor-pointer hover:text-secondary">
         <Link href="https://linkedin.com">
           <a target="_blank">
             <FiLinkedin />
           </a>
         </Link>
       </div>
-      <div className="hover:cursor-pointer hover:text-blue-500">
+      <div className="hover:cursor-pointer hover:text-secondary">
         <Link href="https://twitter.com">
           <a target="_blank">
             <BsTwitter />

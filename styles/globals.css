@@ -33,7 +33,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #c89b7b;
 }
 
 /* Handle on hover */
@@ -46,4 +46,8 @@ a {
 .tab-button:disabled {
   background: linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%);
   color: white;
+}
+
+.customGradient {
+  background: linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%);
 }

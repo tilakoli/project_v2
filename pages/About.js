@@ -59,16 +59,17 @@ const About = () => {
       languageName: "NextJs",
       skillLevel: "80%",
     },
-    {
-      languageName: "Css",
-      skillLevel: "80%",
-    },
+
     {
       languageName: "Redux",
       skillLevel: "80%",
     },
     {
       languageName: "JestJs",
+      skillLevel: "80%",
+    },
+    {
+      languageName: "Css/Scss",
       skillLevel: "80%",
     },
   ];
@@ -183,25 +184,29 @@ const About = () => {
             </div>
             <hr className="hidden w-full h-[2px] bg-white/50 md:block mt-5 mb-4" />
             {/* -------------------------skills ------------------------ */}
-            <div className="flex flex-col w-full gap-4 mt-4 mb-8 md:gap-0 md:flex-row">
+            <div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 rounded-md bg-black/50 backdrop-blur-sm md:gap-0 md:flex-row">
               <div className="flex flex-col w-full h-full gap-2 text-white md:w-1/2 md:gap-3">
                 <div>
                   <h1 className="text-2xl font-bold underline ">
                     Programming Skills
                   </h1>
                 </div>
-                {skills.map((elem, index) => {
-                  return (
-                    <div className="flex flex-col gap-2 md:gap-3" key={index}>
-                      <div className="flex gap-2 text-lg md:text-xl">
-                        <div className="text-gray-300">
-                          {elem.languageName}:
+                <div className="">
+                  {skills.map((elem, index) => {
+                    return (
+                      <div className="flex flex-col gap-2 md:gap-3" key={index}>
+                        <div className="flex gap-2 mb-3 text-lg md:text-xl">
+                          <div className="flex items-center text-secondary">
+                            {elem.languageName}:
+                          </div>
+                          <div className="flex items-center">
+                            <progress value={elem.skillLevel} className="" />
+                          </div>
                         </div>
-                        <progress value={elem.skillLevel} className="" />
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
               <div className="flex flex-col w-full h-full gap-2 text-white md:gap-3 md:w-1/2">
                 <div>
@@ -212,12 +217,16 @@ const About = () => {
                 {Languages.map((elem, index) => {
                   return (
                     <div className="flex flex-col gap-2 md:gap-3" key={index}>
-                      <div className="flex gap-2 text-lg md:text-xl">
-                        <div className="text-gray-300">{elem.language}:</div>
-                        <progress
-                          value={elem.languageProficiency}
-                          className=""
-                        />
+                      <div className="flex gap-2 mb-3 text-lg md:text-xl">
+                        <div className="flex items-center text-secondary">
+                          {elem.language}:
+                        </div>
+                        <div className="flex items-center">
+                          <progress
+                            value={elem.languageProficiency}
+                            className=""
+                          />
+                        </div>
                       </div>
                     </div>
                   );
@@ -225,14 +234,17 @@ const About = () => {
               </div>
             </div>
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
-            <div className="flex flex-col w-full gap-4 mb-8 md:mt-4 md:flex-row md:gap-4">
+            <div className="flex flex-col w-full gap-4 p-8 mb-8 rounded-md md:mt-4 md:flex-row md:gap-4 bg-black/50 backdrop-blur-sm">
               <div className="flex flex-col w-full h-full gap-2 text-white md:gap-3 md:w-1/2">
                 <div>
                   <h1 className="text-2xl font-bold underline ">Knowledge</h1>
                 </div>
                 {Knowledge.map((e, i) => {
                   return (
-                    <div className="flex flex-col gap-2 md:gap-3" key={i}>
+                    <div
+                      className="flex flex-col gap-2 cursor-pointer md:gap-3"
+                      key={i}
+                    >
                       <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
                         <div className="text-gray-300">
                           <MdArrowForwardIos />

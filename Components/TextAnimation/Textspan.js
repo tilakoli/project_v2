@@ -13,12 +13,15 @@ const Textspan = ({ children }) => {
         "scale3d(.9,1.05,1)",
         "scale3d(1,1,1)",
       ],
-      color: ["#FFD700", "#fff", "#000000"],
+      color: ["#F8F991", "#fff", "#000000"],
     };
   };
 
   return (
-    <motion.span whileHover={() => textBand()} className="inline-block">
+    <motion.span
+      whileHover={() => textBand()}
+      className="inline-block cursor-pointer"
+    >
       {children}
     </motion.span>
   );

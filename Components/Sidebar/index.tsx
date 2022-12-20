@@ -12,7 +12,7 @@ const Index = () => {
         <MainSidebar />
       </div>
       {/* --------------------------------mobile sidebar ------------------------ */}
-      <div className="fixed z-50 flex items-center justify-between w-screen h-10 px-4 text-white bg-gray-600 md:hidden">
+      <div className="fixed z-50 flex items-center justify-between w-screen h-10 px-4 text-white bg-gray-600 lg:hidden">
         <Link href="/">
           <a>
             <h1 className="text-xl font-bold tracking-wider">Tilak</h1>

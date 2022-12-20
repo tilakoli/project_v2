@@ -14,20 +14,24 @@ const Index = () => {
             <TextAnimation label="Oli" />
           </div>
           <div className="flex items-center justify-center md:text-4xl gap-x-2">
-            {/* I am a D */}
-            <TextAnimation label="I" />
+            I am a
+            {/* <TextAnimation label="I" />
             <TextAnimation label="am" />
-            <TextAnimation label="a" />
+            <TextAnimation label="a" /> */}
             <span>
               <Typical
-                steps={["Developer!", 4000, "Designer!", 4000]}
+                steps={[
+                  "Developer!",
+                  4000,
+                  "Designer!",
+                  4000,
+                  "Freelancer!",
+                  4000,
+                ]}
                 loop={Infinity}
                 wrapper="p"
               />
             </span>
-            {/* 
-            <TextAnimation label="Web" />
-            <TextAnimation label="Developer" /> */}
           </div>
         </div>
         <div className=" flex justify-center md:justify-center items-center  md:w-[10%]">

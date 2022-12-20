@@ -8,10 +8,9 @@ module.exports = {
     extend: {
       colors: {
         primaryBlack: "#141115",
-        primary: "#f5f5f5",
-        customBlue: "#2E5EAA",
+        // secondary: "#C89B7B",
+        secondary: "#F8F991",
         customRed: "#A30015",
-        creamyWhite: "#E6FAFC",
       },
       backgroundImage: {
         homeBg: "url('/images/home-bg.jpg')",
