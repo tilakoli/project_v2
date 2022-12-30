@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import SocialLinks from "../SocialLinks/SocialLinks";
 import { NavigationData } from "./navigationData";
 
 const MobileSidebar = () => {
   return (
     <>
-      <div className="fixed top-0 left-0 z-40 w-screen h-full transition-all duration-500 ease-in-out bg-gray-600">
-        <div className="flex flex-col items-center justify-between text-[2rem] h-full">
+      <div className="fixed top-0 left-0 z-40 w-screen h-full transition-all duration-500 ease-in-out dark:bg-black bg-customWhite dark:text-white md:hidden ">
+        <div className="flex flex-col items-center justify-between text-[2rem] h-full pb-5">
           <div className="flex flex-col items-start justify-center h-full gap-5 text-left ">
             {NavigationData.map((elem) => {
               return (
@@ -20,13 +19,9 @@ const MobileSidebar = () => {
                       {elem.icon} {elem.Name}
                     </a>
                   </Link>
-                  <div></div>
                 </div>
               );
             })}
-          </div>
-          <div>
-            <SocialLinks />
           </div>
         </div>
       </div>
