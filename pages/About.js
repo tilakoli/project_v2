@@ -8,12 +8,6 @@ import { MdArrowForwardIos } from "react-icons/md";
 //
 
 const About = () => {
-  const [cursorVariant, setCursorVariant] = useState("default");
-  const [isCursorHidden, setIsCursorHidden] = useState(false);
-
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
-
   const handleCvDownload = () => {
     console.log("download");
   };
@@ -89,11 +83,12 @@ const About = () => {
   ];
   const Knowledge = ["Bootstrap", "Reactjs", "NextJs", "tailwindcss"];
   const Interests = ["Music", "Books", "Coding", "Experimenting"];
+
   return (
     <div className="h-full">
       {/* <CustomCursor cursorVariant={cursorVariant} isHidden={isCursorHidden} /> */}
       <Layout>
-        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full md:mb-12 ">
+        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-black dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
             {/* //bg-gray-400/40 */}
@@ -101,32 +96,28 @@ const About = () => {
               <p>About</p>
             </div>
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-white md:text-5xl">
-                About Me
-              </h2>
+              <h2 className="text-3xl font-bold md:text-5xl">About Me</h2>
             </div>
             <div className="w-full h-auto md:h-[40rem] relative">
               {/* <div className="absolute top-0 left-0 w-full h-full backdrop-grayscale"></div> */}
               <img
                 src="/aboutImage.png"
                 alt="User profile picture"
-                className="w-[90%] h-full hover:cursor-none"
+                className="w-[90%] h-full"
                 // onMouseEnter={textEnter}
                 // onMouseLeave={textLeave}
               />
             </div>
             <div
-              className="text-white "
+              className=""
               // onMouseEnter={textEnter}
               // onMouseLeave={textLeave}
             >
               <h1 className="text-2xl md:text-4xl">Tilak Oli</h1>
-              <h3 className="text-gray-400 text-md md:text-xl">
-                Web Developer
-              </h3>
+              <h3 className=" text-md md:text-xl">Web Developer</h3>
             </div>
-            <hr className="hidden w-full h-[2px] bg-white/50 md:block mt-5 mb-4" />
-            <div className="text-white text-md md:text-xl">
+            <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
+            <div className=" text-md md:text-xl">
               <p>
                 lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
                 dolor sit amet, consectetur adip occure lorem ipsum dolor sit
@@ -148,24 +139,24 @@ const About = () => {
               {/* -----------------------personal Details --------------------
                */}
               <div className="flex flex-col w-full mb-8 md:flex-row">
-                <div className="flex flex-col w-full h-full gap-2 text-white md:w-1/2 md:gap-3">
+                <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                   {personalData.map((elem, index) => {
                     return (
                       <div className="flex flex-col gap-2 md:gap-3" key={index}>
                         <div className="flex gap-2 text-lg md:text-xl">
-                          <div className="text-gray-300">{elem.label}:</div>
+                          <div className="">{elem.label}:</div>
                           <div>{elem.value}</div>
                         </div>
                       </div>
                     );
                   })}
                 </div>
-                <div className="flex w-full h-full text-white md:w-1/2">
+                <div className="flex w-full h-full md:w-1/2">
                   {personalDetail2.map((elem, index) => {
                     return (
                       <div className="flex flex-col gap-2 md:gap-3" key={index}>
                         <div className="flex gap-2 text-lg md:text-xl">
-                          <div className="text-gray-300">{elem.label}:</div>
+                          <div className="">{elem.label}:</div>
                           <div>{elem.value}</div>
                         </div>
                       </div>
@@ -174,18 +165,16 @@ const About = () => {
                 </div>
               </div>
               <button
-                onMouseEnter={() => setIsCursorHidden(true)}
-                onMouseLeave={() => setIsCursorHidden(false)}
                 onClick={handleCvDownload}
-                className="p-5 text-black uppercase bg-white cursor-none hover:border hover:border-white hover:bg-black/50 backdrop-blur-sm hover:text-white"
+                className="p-5 text-white uppercase bg-black dark:text-black cursor-none dark:bg-white"
               >
                 Download cv
               </button>
             </div>
-            <hr className="hidden w-full h-[2px] bg-white/50 md:block mt-5 mb-4" />
+            <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
             {/* -------------------------skills ------------------------ */}
-            <div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 rounded-md bg-black/50 backdrop-blur-sm md:gap-0 md:flex-row">
-              <div className="flex flex-col w-full h-full gap-2 text-white md:w-1/2 md:gap-3">
+            <div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-300 dark:text-black md:gap-0 md:flex-row">
+              <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                 <div>
                   <h1 className="text-2xl font-bold underline ">
                     Programming Skills
@@ -196,7 +185,7 @@ const About = () => {
                     return (
                       <div className="flex flex-col gap-2 md:gap-3" key={index}>
                         <div className="flex gap-2 mb-3 text-lg md:text-xl">
-                          <div className="flex items-center text-secondary">
+                          <div className="flex items-center ">
                             {elem.languageName}:
                           </div>
                           <div className="flex items-center">
@@ -208,7 +197,7 @@ const About = () => {
                   })}
                 </div>
               </div>
-              <div className="flex flex-col w-full h-full gap-2 text-white md:gap-3 md:w-1/2">
+              <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>
                   <h1 className="text-2xl font-bold underline ">
                     Languages Spoken
@@ -218,7 +207,7 @@ const About = () => {
                   return (
                     <div className="flex flex-col gap-2 md:gap-3" key={index}>
                       <div className="flex gap-2 mb-3 text-lg md:text-xl">
-                        <div className="flex items-center text-secondary">
+                        <div className="flex items-center ">
                           {elem.language}:
                         </div>
                         <div className="flex items-center">
@@ -234,8 +223,8 @@ const About = () => {
               </div>
             </div>
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
-            <div className="flex flex-col w-full gap-4 p-8 mb-8 rounded-md md:mt-4 md:flex-row md:gap-4 bg-black/50 backdrop-blur-sm">
-              <div className="flex flex-col w-full h-full gap-2 text-white md:gap-3 md:w-1/2">
+            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-300 dark:text-black">
+              <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>
                   <h1 className="text-2xl font-bold underline ">Knowledge</h1>
                 </div>
@@ -246,7 +235,7 @@ const About = () => {
                       key={i}
                     >
                       <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
-                        <div className="text-gray-300">
+                        <div className="">
                           <MdArrowForwardIos />
                         </div>
                         <div>{e}</div>
@@ -255,7 +244,7 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col w-full h-full gap-2 text-white md:gap-3 md:w-1/2">
+              <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>
                   <h1 className="text-2xl font-bold underline ">Interests</h1>
                 </div>
@@ -263,7 +252,7 @@ const About = () => {
                   return (
                     <div className="flex flex-col gap-2 md:gap-3" key={i}>
                       <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
-                        <div className="text-gray-300">
+                        <div className="">
                           <MdArrowForwardIos />
                         </div>
                         <div>{e}</div>

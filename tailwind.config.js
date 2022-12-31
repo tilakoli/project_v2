@@ -14,6 +14,10 @@ module.exports = {
         customRed: "#A30015",
         customWhite: "#999696",
       },
+      customGradient: {
+        background:
+          "linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%)",
+      },
       backgroundImage: {
         homeBg: "url('/images/home-bg.jpg')",
       },

@@ -7,13 +7,13 @@ const TypicalAnimation = () => {
     <div className="">
       <motion.div
         className="flex items-center justify-center md:text-4xl gap-x-2"
-        // initial={{ opacity: 0 }}
-        // animate={{ opacity: 1 }}
-        // transition={{
-        //   delay: 2,
-        //   duration: 0.9,
-        //   type: "tween",
-        // }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 2,
+          duration: 0.9,
+          type: "tween",
+        }}
       >
         I am a Developer! 😀
         {/* <span>

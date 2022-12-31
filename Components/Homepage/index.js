@@ -130,7 +130,10 @@ const Index = () => {
           </div>
         </div>
         <div className=" flex justify-center md:justify-center items-center md:w-[10%]">
-          <SocialLinks />
+          <SocialLinks
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
         </div>
       </div>
     </div>

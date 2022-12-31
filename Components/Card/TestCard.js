@@ -42,9 +42,9 @@ const TestCard = (props) => {
         {/* -------------------card body ----------------- */}
         <motion.div
           style={{ x, y, rotateX, rotateY, z: 100000 }}
-          className="flex flex-col gap-5 p-4"
+          className="flex flex-col gap-5 p-4 text-black  dark:text-[#ffffff]"
         >
-          <motion.p className="max-w-[300px] text-[#ffffff]">
+          <motion.p className="max-w-[300px] ">
             {props.projectsData[0].description}
           </motion.p>
           <Link href="">
