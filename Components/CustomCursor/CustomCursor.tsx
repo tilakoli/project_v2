@@ -5,7 +5,7 @@ const CustomCursor = ({ variants, animationVariants }) => {
     <motion.div
       animate={animationVariants ? animationVariants : "default"}
       variants={variants}
-      className="border-2 border-black dark:border-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none  duration-75"
+      className="border border-black dark:border-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none  duration-75"
     />
   );
 };

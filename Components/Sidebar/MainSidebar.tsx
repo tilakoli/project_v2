@@ -1,15 +1,56 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import ReactTooltip from "react-tooltip";
 import { NavigationData } from "./navigationData";
+import CustomCursor from "../CustomCursor/CustomCursor";
 
 const MainSidebar = ({ themeToggleButton }) => {
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
+  useEffect(() => {
+    const onMouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+    };
+    window.addEventListener("mousemove", onMouseMove);
+  }, []);
+  const variants = {
+    default: {
+      x: mousePosition.x - 16, // subtract half of the div's height & width
+      y: mousePosition.y - 16,
+    },
+    negative: {
+      height: 100,
+      width: 100,
+      border: "none",
+      backgroundColor: "white",
+      mixBlendMode: "difference",
+      x: mousePosition.x - 50, // subtract half of the div's height & width
+      y: mousePosition.y - 50,
+    },
+  };
+  const onMouseEnter = () => setCursorVariant("negative");
+  const onMouseLeave = () => setCursorVariant("default");
   return (
     <>
       <div className="hidden bg-gray-300 backdrop-blur-sm dark:bg-black/50 h-[100vh] fixed transition-all duration-700 md:flex-col lg:flex text-creamyWhite md:w-56 ">
-        <div className="flex items-center justify-center border-b-8 dark:border-white border-black  h-[17%] ">
-          Top
-        </div>
+        <CustomCursor variants={variants} animationVariants={cursorVariant} />
+        {/* eslint-disable-next-line @next/next/link-passhref */}
+        <Link href="/">
+          <div className="flex items-center justify-center border-b-8 dark:border-white border-black h-[17%] cursor-pointer text-xl font-bold ">
+            <div
+              className="w-min min-h-fit"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              imɒϱɒꓘ
+            </div>
+          </div>
+        </Link>
         <div className="flex flex-col items-center justify-between text-[2rem] h-3/5">
           <div className="h-full">
             <div className="flex flex-col items-center justify-center h-full gap-10">
@@ -18,28 +59,30 @@ const MainSidebar = ({ themeToggleButton }) => {
                   <>
                     {" "}
                     <div
-                      data-tip
-                      data-for={elem.datafor}
+                      onMouseEnter={onMouseEnter}
+                      onMouseLeave={onMouseLeave}
                       key={elem.Name}
-                      className="flex cursor-pointer text-dark dark:text-white justify-evenly hover:text-secondary hover:animate-bounce"
+                      className="flex cursor-pointer text-dark dark:text-white justify-evenly "
                     >
                       <Link href={elem.link}>
                         <a>{elem.icon}</a>
                       </Link>
                     </div>
-                    <ReactTooltip id={elem.datafor} place="top" effect="solid">
-                      {elem.Name}
-                    </ReactTooltip>
                   </>
                 );
               })}
             </div>
-
             <div></div>
           </div>
         </div>
         <div className="flex items-center justify-center border-t-8 border-black dark:border-white h-[17%]">
-          {themeToggleButton()}
+          <div
+            className="w-min h-min"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            {themeToggleButton()}
+          </div>
         </div>
       </div>
     </>

@@ -1,52 +1,43 @@
 import React, { useState } from "react";
 import Layout from "../Layout";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+// import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+// import "react-tabs/style/react-tabs.css";
 import TestCard from "../Components/Card/TestCard";
-import TesxtAnimation from "../Components/TextAnimation/TextAnimation";
-const Work = () => {
-  const [currentTab, setCurrentTab] = useState("1");
-  const tabs = [
-    {
-      id: 1,
-      tabTitle: "Tab 1",
-      title: "Title 1",
-      content:
-        "Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.",
-    },
-    {
-      id: 2,
-      tabTitle: "Tab 2",
-      title: "Title 2",
-      content: "Contenido de tab 2.",
-    },
-    {
-      id: 3,
-      tabTitle: "Tab 3",
-      title: "Title 3",
-      content: "Contenido de tab 3.",
-    },
-    {
-      id: 4,
-      tabTitle: "Tab 4",
-      title: "Title 4",
-      content: "Contenido de tab 4.",
-    },
-  ];
-  const handleTabClick = (e) => {
-    setCurrentTab(e.target.id);
-  };
+import { projectsData } from "../utils/PersonalData";
 
-  const projectsData = [
-    {
-      projectFirstName: "Fly",
-      projectSecondName: "Nepa",
-      description:
-        " Lorem ipsum is simply dummy text of the printing and typesetting printing and typesetting printing and typesetting",
-      link: "http://youtube.com/",
-      projectLogo: "/flynepaLogo.png",
-    },
-  ];
+const Work = () => {
+  // const [currentTab, setCurrentTab] = useState("1");
+  // const tabs = [
+  //   {
+  //     id: 1,
+  //     tabTitle: "Tab 1",
+  //     title: "Title 1",
+  //     content:
+  //       "Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.",
+  //   },
+  //   {
+  //     id: 2,
+  //     tabTitle: "Tab 2",
+  //     title: "Title 2",
+  //     content: "Contenido de tab 2.",
+  //   },
+  //   {
+  //     id: 3,
+  //     tabTitle: "Tab 3",
+  //     title: "Title 3",
+  //     content: "Contenido de tab 3.",
+  //   },
+  //   {
+  //     id: 4,
+  //     tabTitle: "Tab 4",
+  //     title: "Title 4",
+  //     content: "Contenido de tab 4.",
+  //   },
+  // ];
+  // const handleTabClick = (e) => {
+  //   setCurrentTab(e.target.id);
+  // };
+
   return (
     <Layout>
       <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black lg:mb-12 bg-customWhite dark:bg-black dark:text-white">

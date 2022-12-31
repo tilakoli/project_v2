@@ -2,7 +2,16 @@ import React, { useState } from "react";
 import Layout from "../Layout/index";
 import CustomCursor from "../Components/CustomCursor/CustomCursor";
 import { MdArrowForwardIos } from "react-icons/md";
-
+import {
+  personalData,
+  personalDetail2,
+  skills,
+  Languages,
+  Knowledge,
+  Interests,
+  description1,
+  description2,
+} from "../utils/PersonalData";
 // give a different background color to each of the showCase rows with sufficient spacing
 // above and below to break the symmetry of one single box
 //
@@ -12,86 +21,13 @@ const About = () => {
     console.log("download");
   };
 
-  const personalData = [
-    {
-      label: "Birthday",
-      value: "1998-04-01",
-    },
-    {
-      label: "Age",
-      value: "23",
-    },
-    {
-      label: "Address",
-      value: "Kathmandu, Nepal",
-    },
-    {
-      label: "email",
-      value: "tilak.81oli@gmail.com",
-    },
-    {
-      label: "Phone",
-      value: "0987654321",
-    },
-    {
-      label: "Nationality",
-      value: "Nepali",
-    },
-  ];
-  const personalDetail2 = [
-    {
-      label: "Interests",
-      value: "Coding, Music!",
-    },
-  ];
-  const skills = [
-    {
-      languageName: "ReactJs",
-      skillLevel: "80%",
-    },
-    {
-      languageName: "NextJs",
-      skillLevel: "80%",
-    },
-
-    {
-      languageName: "Redux",
-      skillLevel: "80%",
-    },
-    {
-      languageName: "JestJs",
-      skillLevel: "80%",
-    },
-    {
-      languageName: "Css/Scss",
-      skillLevel: "80%",
-    },
-  ];
-  const Languages = [
-    {
-      language: "English",
-      languageProficiency: "80%",
-    },
-    {
-      language: "Hindi",
-      languageProficiency: "80%",
-    },
-    {
-      language: "Nepali",
-      languageProficiency: "100%",
-    },
-  ];
-  const Knowledge = ["Bootstrap", "Reactjs", "NextJs", "tailwindcss"];
-  const Interests = ["Music", "Books", "Coding", "Experimenting"];
-
   return (
     <div className="h-full">
       {/* <CustomCursor cursorVariant={cursorVariant} isHidden={isCursorHidden} /> */}
       <Layout>
-        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-black dark:text-white">
+        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-black/30 dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
-            {/* //bg-gray-400/40 */}
             <div className="p-2 rounded-sm bg-white/50 text-black/50 backdrop-blur-sm">
               <p>About</p>
             </div>
@@ -118,23 +54,9 @@ const About = () => {
             </div>
             <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
             <div className=" text-md md:text-xl">
-              <p>
-                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
-                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
-                amet, consectetur adip occure lorem ipsum dolor sit amet,
-              </p>
+              <p>{description1}</p>
               <br />
-              <p>
-                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
-                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
-                amet, consectetur adip occure lorem ipsum dolor sit amet,
-                consectetur adip occure lorem ipsum dolor sit amet, consectetur
-                adip occure. adip occure lorem ipsum dolor sit amet, consectetur
-                adip occure lorem ipsum dolor sit amet, consectetur adip occure
-                lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum
-                dolor sit amet, consectetur adip occure lorem ipsum dolor sit
-                amet,
-              </p>
+              <p>{description2}</p>
               <br />
               {/* -----------------------personal Details --------------------
                */}
@@ -173,7 +95,7 @@ const About = () => {
             </div>
             <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
             {/* -------------------------skills ------------------------ */}
-            <div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-300 dark:text-black md:gap-0 md:flex-row">
+            <div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row">
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                 <div>
                   <h1 className="text-2xl font-bold underline ">
@@ -223,7 +145,7 @@ const About = () => {
               </div>
             </div>
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
-            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-300 dark:text-black">
+            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400 dark:text-black">
               <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>
                   <h1 className="text-2xl font-bold underline ">Knowledge</h1>

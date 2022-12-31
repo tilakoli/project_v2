@@ -3,9 +3,11 @@ import Layout from "../Layout";
 import ContactPage from "../Components/ContactPage";
 const ContactMe = () => {
   return (
-    <Layout>
-      <ContactPage />
-    </Layout>
+    <div className="w-full h-full">
+      <Layout>
+        <ContactPage />
+      </Layout>
+    </div>
   );
 };
 

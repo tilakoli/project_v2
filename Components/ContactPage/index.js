@@ -50,7 +50,7 @@ const Index = () => {
     </svg>
   );
   return (
-    <div className="relative items-center flex flex-col w-full h-[95vh] md:h-screen  text-white">
+    <div className="z-50 flex flex-col items-center justify-center h-screen min-w-full text-black bg-customWhite dark:bg-black/30 dark:text-white">
       <div className="flex flex-col items-center justify-center gap-2 mt-12 text-3xl font-bold h-28">
         Contact {/*{infinityVector} */}
         <div className="w-full border border-customBlue"></div>
