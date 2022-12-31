@@ -20,7 +20,7 @@ const Textspan = ({ children }) => {
   return (
     <motion.span
       whileHover={() => textBand()}
-      className="inline-block cursor-pointer"
+      className="inline-block cursor-none"
     >
       {children}
     </motion.span>

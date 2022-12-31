@@ -1,52 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-const CustomCursor = () => {
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  const [cursorVariant, setCursorVariant] = useState("default");
-  useEffect(() => {
-    const onMouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", onMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", onMouseMove);
-    };
-  }, []);
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
-
-  const variants = {
-    hidden: {},
-    default: {
-      x: mousePosition.x - 20,
-      y: mousePosition.y - 20,
-    },
-    text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 20,
-      y: mousePosition.y - 20,
-      background: "white",
-      // mixBlendMode: 'difference'
-    },
-  };
-
+const CustomCursor = ({ variants, animationVariants }) => {
   return (
     <motion.div
+      animate={animationVariants ? animationVariants : "default"}
       variants={variants}
-      initial="hidden"
-      animate="default"
-      className="fixed items-center justify-center hidden w-10 h-10 text-center transition-all duration-75 ease-linear border rounded-full pointer-events-none md:flex z-80 text-md content-none border-primary"
-    >
-      <motion.div className="relative w-1 h-1 bg-white rounded-full"></motion.div>
-    </motion.div>
+      className="border-2 border-black dark:border-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none  duration-75"
+    />
   );
 };
 
