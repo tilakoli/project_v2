@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primaryBlack: "#141115",
-        // secondary: "#C89B7B",
+        secondary: "#C89B7B",
         secondary: "#F8F991",
         customRed: "#A30015",
         customWhite: "#999696",
@@ -19,7 +19,10 @@ module.exports = {
           "linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%)",
       },
       backgroundImage: {
-        homeBg: "url('/images/home-bg.jpg')",
+        backgroundImage1: "url('/background1.jpg')",
+        backgroundImage2: "url('/background2.jpg')",
+        backgroundImage3: "url('/background3.jpg')",
+        backgroundImage4: "url('/background4.jpg')",
       },
     },
   },

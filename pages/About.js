@@ -36,19 +36,14 @@ const About = () => {
             </div>
             <div className="w-full h-auto md:h-[40rem] relative">
               {/* <div className="absolute top-0 left-0 w-full h-full backdrop-grayscale"></div> */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/aboutImage.png"
+                src="/background4.jpg"
                 alt="User profile picture"
-                className="w-[90%] h-full"
-                // onMouseEnter={textEnter}
-                // onMouseLeave={textLeave}
+                className="object-fill w-full h-full bg-no-repeat bg-cover"
               />
             </div>
-            <div
-              className=""
-              // onMouseEnter={textEnter}
-              // onMouseLeave={textLeave}
-            >
+            <div className="">
               <h1 className="text-2xl md:text-4xl">Tilak Oli</h1>
               <h3 className=" text-md md:text-xl">Web Developer</h3>
             </div>
