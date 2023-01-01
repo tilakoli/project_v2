@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 const TypicalAnimation = () => {
   return (
