@@ -8,7 +8,7 @@ const Index = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const submit = () => {
-    window.alert("Message Sent!");
+    window.alert("Because his field of expertise was outstanding.");
     setTimeout(() => {
       window.location.reload();
     }, 500);

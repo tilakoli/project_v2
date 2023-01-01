@@ -15,7 +15,9 @@ const TypicalAnimation = () => {
           type: "tween",
         }}
       >
-        {/* I am a Developer! 😀 */}I am Saisha`s Love💛!
+        I am a ______, 😀
+        {/* I am an apostrophe -> just a symbol to remind you that theres more to see  */}
+        {/* I am Saisha`s Love💛! */}
         {/* <span>
           <Typical
             steps={["Developer!", 4000, "Designer!", 4000, "Freelancer!", 4000]}

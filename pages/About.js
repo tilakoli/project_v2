@@ -19,6 +19,7 @@ import {
 const About = () => {
   const handleCvDownload = () => {
     console.log("download");
+    alert("Why was the scarecrow hired?");
   };
 
   return (
