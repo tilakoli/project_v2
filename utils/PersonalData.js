@@ -133,24 +133,24 @@ export const Interests = ["Music", "Books", "Coding", "Experimenting"];
 
 export const blogsData = [
   {
-    src: "/aboutImage.png",
-    Title: "Project ONe",
+    src: "/blogImage.png",
+    Title: "Blog One",
     link: "something.com",
     linkText: "Read More",
     description:
       " Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard.",
   },
   {
-    src: "/aboutImage.png",
-    Title: "Project Two",
+    src: "/blogImage.png",
+    Title: "Blog Two",
     link: "something.com",
     linkText: "Read More",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   },
   {
-    src: "/aboutImage.png",
-    Title: "Project Three",
+    src: "/blogImage.png",
+    Title: "Blog Three",
     link: "something.com",
     linkText: "Read More",
     description:
@@ -164,7 +164,7 @@ export const projectsData = [
     projectFirstName: "lo",
     projectSecondName: "rem",
     description:
-      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum solut nob est eligendi optio cumque nihil impedit!",
+      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum solut nob est eligendi!",
     link: "http://youtube.com/",
     projectLogo: "/flynepaLogo.png",
   },
