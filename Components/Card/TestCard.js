@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useMotionValue, useTransform, motion } from "framer-motion";
 import Link from "next/link";
@@ -61,6 +62,7 @@ const TestCard = (props) => {
               {logos.map((src, index) => {
                 return (
                   <img
+                    alt="used technologies logo"
                     key={index}
                     src={src.src}
                     className="w-8 h-8 rounded-full cursor-pointer"
