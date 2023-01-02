@@ -30,11 +30,9 @@ const Index = () => {
       x: mousePosition.x - 16, // subtract half of the div's height & width
       y: mousePosition.y - 16,
     },
-
     negative: {
       height: 150,
       width: 150,
-      border: "none",
       backgroundColor: "white",
       mixBlendMode: "difference",
       x: mousePosition.x - 75, // subtract half of the div's height & width

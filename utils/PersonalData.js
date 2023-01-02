@@ -53,13 +53,13 @@ export const description2 =
   " lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure. adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet,";
 
 export const personalData = [
-  {
-    label: "Birthday",
-    value: "1998-04-01",
-  },
+  // {
+  //   label: "Birthday",
+  //   value: "1998-04-01",
+  // },
   {
     label: "Age",
-    value: "23",
+    value: "24",
   },
   {
     label: "Address",
@@ -71,7 +71,7 @@ export const personalData = [
   },
   {
     label: "Phone",
-    value: "0987654321",
+    value: "*********",
   },
   {
     label: "Nationality",
@@ -138,7 +138,7 @@ export const blogsData = [
     link: "something.com",
     linkText: "Read More",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      " Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard.",
   },
   {
     src: "/aboutImage.png",
@@ -161,10 +161,10 @@ export const blogsData = [
 // -----------MyWorkPage Data---------
 export const projectsData = [
   {
-    projectFirstName: "Fly",
-    projectSecondName: "Nepa",
+    projectFirstName: "lo",
+    projectSecondName: "rem",
     description:
-      " Lorem ipsum is simply dummy text of the printing and typesetting printing and typesetting printing and typesetting",
+      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum solut nob est eligendi optio cumque nihil impedit!",
     link: "http://youtube.com/",
     projectLogo: "/flynepaLogo.png",
   },

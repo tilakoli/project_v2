@@ -6,8 +6,13 @@ const CustomCursor = ({ variants, animationVariants }) => {
     <motion.div
       animate={animationVariants ? animationVariants : "default"}
       variants={variants}
-      className="border border-black dark:border-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none  duration-75"
-    />
+      className={`
+      fixed top-0 left-0 duration-75 h-[32px] w-[32px] ${
+        animationVariants !== "negative"
+          ? "border border-black dark:border-white"
+          : "border-none"
+      } rounded-full pointer-events-none `}
+    ></motion.div>
   );
 };
 

@@ -32,7 +32,7 @@ const TestCard = (props) => {
       >
         <motion.h1
           style={{ x, y, rotateX, rotateY, z: 100000 }}
-          className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-blue-800 md:text-5xl top-5"
+          className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-blue-800 uppercase md:text-5xl top-5"
         >
           {props.projectsData[0].projectFirstName}
           <span className="text-red-800">

@@ -26,7 +26,6 @@ const MainSidebar = ({ themeToggleButton }) => {
     negative: {
       height: 100,
       width: 100,
-      border: "none",
       backgroundColor: "white",
       mixBlendMode: "difference",
       x: mousePosition.x - 50, // subtract half of the div's height & width
