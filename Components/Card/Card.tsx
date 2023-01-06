@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Card = ({ src, Title, link, linkText, description }) => {
   return (
@@ -17,9 +18,9 @@ const Card = ({ src, Title, link, linkText, description }) => {
         <div className="text-2xl md:text-3xl cursor-text ">{Title}</div>
         <div className=" cursor-text">{description}</div>
         <div>
-          <Link href="">
+          <Link href={link}>
             <a
-              href={link}
+            target='_blank'
               className="uppercase md:text-sm hover:pl-5 hover:transition-all hover:duration-200 hover:border-r hover:pr-4"
             >
               {linkText}

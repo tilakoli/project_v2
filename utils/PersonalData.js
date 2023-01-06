@@ -133,12 +133,12 @@ export const Interests = ["Music", "Books", "Coding", "Experimenting"];
 
 export const blogsData = [
   {
-    src: "/blogImage.png",
-    Title: "Blog One",
-    link: "something.com",
+    src: "/blogAssets/dockerblog.png",
+    Title: "Dockerize a react app",
+    link: "https://medium.com/@tilakOli/dockerize-react-app-8c943d7ab6d9",
     linkText: "Read More",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard.",
+      "Dockerizing a react application and enable hot reload with docker-compose.",
   },
   {
     src: "/blogImage.png",
