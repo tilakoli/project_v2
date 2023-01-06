@@ -46,11 +46,13 @@ const Index = () => {
   return (
     <div className="bg-no-repeat bg-cover dark:bg-black/30 bg-customWhite ">
       {/* bg-backgroundImage3 */}
-      <CustomCursor variants={variants} animationVariants={cursorVariant} />
+      <div className="hidden md:block">
+        <CustomCursor variants={variants} animationVariants={cursorVariant} />
+      </div>
       <div className="flex flex-col md:flex-row ">
         {/* <div className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-cover bg-backgroundImage1 md:w-[88.5%] opacity-60"></div> */}
-        <div className="md:w-[90%] flex flex-col items-center pl-[10%]  justify-center h-[calc(100vh-5rem)] md:h-screen text-2xl dark:text-white text-black  md:text-8xl md:pr-56 ">
-          <div className="flex mb-2 font-bold gap-x-4">
+        <div className="md:w-[90%] flex flex-col items-center pl-[10%]  justify-center h-[calc(100vh-5rem)] md:h-screen text-3xl dark:text-white text-black  md:text-8xl md:pr-56 ">
+          <div className="flex mb-2 font-bold gap-x-2 md:gap-x-4">
             {/*----------------- firstName--------  */}
             <div className="flex">
               {FirstNameNameAnimationConfig.map((letter, index) => {

@@ -63,7 +63,9 @@ const About = () => {
 
   return (
     <div className="h-full">
-      <CustomCursor variants={variants} animationVariants={cursorVariant} />
+      <div className="hidden md:block">
+        <CustomCursor variants={variants} animationVariants={cursorVariant} />
+      </div>
       <Layout>
         <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
@@ -119,7 +121,7 @@ const About = () => {
                 onClick={handleCvDownload}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                className="p-5 text-white uppercase bg-black dark:text-black cursor-none dark:bg-white"
+                className="p-5 text-white uppercase bg-black dark:text-black md:cursor-none dark:bg-white"
               >
                 Download cv
               </button>

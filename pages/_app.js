@@ -6,18 +6,18 @@ import Router from "next/router";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  // Router.events.on("routeChangeStart", (url) => {
-  //   setLoading(true);
-  // });
-  // Router.events.on("routeChangeComplete", (url) => {
-  //   setLoading(false);
-  // });
+  Router.events.on("routeChangeStart", (url) => {
+    setLoading(true);
+  });
+  Router.events.on("routeChangeComplete", (url) => {
+    setLoading(false);
+  });
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      {/* {loading ? <Loader /> : null} */}
       <motion.div>
+        {loading ? <Loader /> : null}
         <Component {...pageProps} />
       </motion.div>
     </ThemeProvider>

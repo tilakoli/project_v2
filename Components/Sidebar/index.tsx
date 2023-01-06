@@ -51,7 +51,7 @@ const Index = () => {
         <Link href="/">
           <a>
             <h1 className="text-xl font-bold tracking-wider text-black dark:text-customWhite">
-              Tilak
+              imɒϱɒꓘ
             </h1>
           </a>
         </Link>

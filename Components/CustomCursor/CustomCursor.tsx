@@ -6,6 +6,7 @@ const CustomCursor = ({ variants, animationVariants }) => {
     <motion.div
       animate={animationVariants ? animationVariants : "default"}
       variants={variants}
+      style={{ zIndex: 999999999999 }}
       className={`
       fixed top-0 left-0 duration-75 h-[32px] w-[32px] ${
         animationVariants !== "negative"

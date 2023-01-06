@@ -6,7 +6,7 @@ const TypicalAnimation = () => {
   return (
     <div className="">
       <motion.div
-        className="flex items-center justify-center md:text-4xl gap-x-2 cursor-none"
+        className="flex items-center justify-center md:text-4xl gap-x-2 md:cursor-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
