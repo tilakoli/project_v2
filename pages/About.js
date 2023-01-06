@@ -65,7 +65,7 @@ const About = () => {
     <div className="h-full">
       <CustomCursor variants={variants} animationVariants={cursorVariant} />
       <Layout>
-        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-black/30 dark:text-white">
+        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
             <Badge label="About" Heading="About Me" />

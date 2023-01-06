@@ -2,11 +2,12 @@ const ParticlesConfig = {
   autoPlay: true,
   background: {
     color: {
-      value: "#131317",
+      value: "",
     },
-    opacity: 1,
+    opacity: 0,
   },
   backgroundMask: {
+    /// background color mask
     composite: "destination-out",
     cover: {
       color: {
@@ -26,214 +27,17 @@ const ParticlesConfig = {
   interactivity: {
     detectsOn: "window",
     events: {
-      onClick: {
-        enable: false,
-      },
-      onDiv: {
-        enable: false,
-        type: "circle",
-      },
-      onHover: {
-        enable: false,
-        mode: "trail",
-        parallax: {
-          enable: false,
-          force: 2,
-          smooth: 10,
-        },
-      },
-      resize: true,
-    },
-    modes: {
-      attract: {
-        distance: 200,
-        duration: 0.4,
-        easing: "ease-out-quad",
-        factor: 1,
-        maxSpeed: 50,
-        speed: 1,
-      },
-      bounce: {
-        distance: 200,
-      },
-      bubble: {
-        distance: 200,
-        duration: 0.4,
-        mix: false,
-        divs: {
-          distance: 200,
-          duration: 0.4,
-          mix: false,
-        },
-      },
-      connect: {
-        distance: 80,
-        links: {
-          opacity: 0.5,
-        },
-        radius: 60,
-      },
-      grab: {
-        distance: 100,
-        links: {
-          blink: false,
-          consent: false,
-          opacity: 1,
-        },
-      },
-      push: {
-        default: true,
-        groups: [],
-        quantity: 4,
-      },
-      remove: {
-        quantity: 2,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-        factor: 100,
-        speed: 1,
-        maxSpeed: 50,
-        easing: "ease-out-quad",
-        divs: {
-          distance: 200,
-          duration: 0.4,
-          factor: 100,
-          speed: 1,
-          maxSpeed: 50,
-          easing: "ease-out-quad",
-        },
-      },
-      slow: {
-        factor: 3,
-        radius: 200,
-      },
-      trail: {
-        delay: 0.005,
-        pauseOnStop: true,
-        quantity: 5,
-        particles: {
-          color: {
-            value: "#ff0000",
-            animation: {
-              enable: true,
-              speed: 400,
-              sync: true,
-            },
-          },
-          collisions: {
-            enable: false,
-          },
-          move: {
-            outModes: {
-              default: "destroy",
-            },
-            speed: 2,
-          },
-          size: {
-            value: 5,
-            animation: {
-              enable: true,
-              speed: 5,
-              minimumValue: 1,
-              sync: true,
-              startValue: "min",
-              destroy: "max",
-            },
-            random: {},
-          },
-          stroke: {
-            color: {
-              value: "",
-              animation: {
-                count: 0,
-                enable: false,
-                offset: {
-                  max: 0,
-                  min: 0,
-                },
-                speed: 0,
-                decay: 0,
-                sync: false,
-              },
-            },
-          },
-        },
-      },
-      light: {
-        area: {
-          gradient: {
-            start: {
-              value: "#ffffff",
-            },
-            stop: {
-              value: "#000000",
-            },
-          },
-          radius: 1000,
-        },
-        shadow: {
-          color: {
-            value: "#000000",
-          },
-          length: 2000,
-        },
-      },
-    },
-  },
-  motion: {
-    disable: false,
-    reduce: {
-      factor: 4,
-      value: true,
+      resize: false,
     },
   },
   particles: {
-    bounce: {
-      horizontal: {
-        random: {
-          enable: false,
-          minimumValue: 0.1,
-        },
-        value: 1,
-      },
-      vertical: {
-        random: {
-          enable: false,
-          minimumValue: 0.1,
-        },
-        value: 1,
-      },
-    },
     collisions: {
-      bounce: {
-        horizontal: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-        vertical: {
-          random: {
-            enable: false,
-            minimumValue: 0.1,
-          },
-          value: 1,
-        },
-      },
       enable: true,
       mode: "bounce",
-      overlap: {
-        enable: true,
-        retries: 0,
-      },
     },
     color: {
-      value: "#fff",
+      value: "#fff", // particles color value
     },
-    groups: {},
     move: {
       angle: {
         offset: 0,
@@ -259,22 +63,11 @@ const ParticlesConfig = {
       drift: 0,
       enable: true,
       gravity: {
-        acceleration: 9.81,
+        // Enable gravity effect for particles
+        acceleration: 1,
         enable: false,
         inverse: false,
-        maxSpeed: 50,
-      },
-      path: {
-        clamp: true,
-        delay: {
-          random: {
-            enable: false,
-            minimumValue: 0,
-          },
-          value: 0,
-        },
-        enable: false,
-        options: {},
+        maxSpeed: 1,
       },
       outModes: {
         default: "out",
@@ -283,21 +76,18 @@ const ParticlesConfig = {
         right: "out",
         top: "out",
       },
-      random: false,
-      size: false,
-      speed: 2,
+      random: true,
+      size: true,
+      speed: 1, // particles moving speed per second
       spin: {
         acceleration: 0,
-        enable: false,
+        enable: false, // spins the particles
       },
-      straight: false,
-      // trail: {
-      //   enable: true,
-      //   length: 10,
-      //   fillColor: {
-      //     value: "#000000",
-      //   },
-      // },
+      straight: true,
+      trail: {
+        enable: false,
+        length: 50,
+      },
       vibrate: false,
       warp: false,
     },
@@ -308,7 +98,7 @@ const ParticlesConfig = {
         factor: 1000,
       },
       limit: 0,
-      value: 50,
+      value: 40,
     },
     opacity: {
       random: {
@@ -331,35 +121,35 @@ const ParticlesConfig = {
       },
     },
     reduceDuplicates: false,
-    // links: {
-    //   blink: false,
-    //   color: {
-    //     value: "random",
-    //   },
-    //   consent: false,
-    //   distance: 100,
-    //   enable: true,
-    //   frequency: 1,
-    //   opacity: 1,
-    //   shadow: {
-    //     blur: 5,
-    //     color: {
-    //       value: "#000",
-    //     },
-    //     enable: false,
-    //   },
-    //   triangles: {
-    //     enable: false,
-    //     frequency: 1,
-    //   },
-    //   width: 1,
-    //   warp: false,
-    // },
+    links: {
+      blink: false,
+      color: {
+        value: "random",
+      },
+      consent: false,
+      distance: 100,
+      enable: true,
+      frequency: 1,
+      opacity: 1,
+      shadow: {
+        blur: 5,
+        color: {
+          value: "#999696",
+        },
+        enable: false,
+      },
+      triangles: {
+        enable: false,
+        frequency: 1,
+      },
+      width: 1,
+      warp: false,
+    },
   },
   pauseOnBlur: true,
   pauseOnOutsideViewport: true,
   responsive: [],
-  smooth: false,
+  smooth: true,
   style: {},
   themes: [],
   zLayers: 100,

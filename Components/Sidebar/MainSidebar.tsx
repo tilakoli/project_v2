@@ -36,7 +36,7 @@ const MainSidebar = ({ themeToggleButton }) => {
   const onMouseLeave = () => setCursorVariant("default");
   return (
     <>
-      <div className="hidden bg-gray-300 backdrop-blur-sm dark:bg-black/50 h-[100vh] fixed transition-all duration-700 md:flex-col lg:flex text-creamyWhite md:w-56 ">
+      <div className="hidden  bg-gray-300 dark:bg-black h-[100vh] fixed md:flex-col lg:flex text-creamyWhite md:w-56 ">
         <CustomCursor variants={variants} animationVariants={cursorVariant} />
         {/* eslint-disable-next-line @next/next/link-passhref */}
         <Link href="/">

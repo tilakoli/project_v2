@@ -85,7 +85,7 @@ const Index = () => {
     </svg>
   );
   return (
-    <div className="z-50 flex flex-col items-center justify-center h-screen min-w-full text-black bg-customWhite dark:bg-black/30 dark:text-white">
+    <div className="z-50 flex flex-col items-center justify-center h-screen min-w-full text-black bg-customWhite dark:bg-primaryBlack dark:text-white">
       <CustomCursor variants={variants} animationVariants={cursorVariant} />
       <div className="flex flex-col items-center justify-center gap-2 mt-12 text-3xl font-bold h-28">
         Contact {/*{infinityVector} */}
@@ -111,7 +111,7 @@ const Index = () => {
         <input
           required
           type="textarea"
-          className="w-48 p-4 bg-transparent border-b outline-none  h-96 focus:border-b-0 focus:border-l focus:duration-100 focus:transition-all md:w-full"
+          className="w-48 p-4 bg-transparent border-b outline-none h-96 focus:border-b-0 focus:border-l focus:duration-100 focus:transition-all md:w-full"
           placeholder="Your Message"
           onChange={(e) => setMessage(e.target.value)}
         />
