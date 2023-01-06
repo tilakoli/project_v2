@@ -134,7 +134,7 @@ export const Interests = ["Music", "Books", "Coding", "Experimenting"];
 export const blogsData = [
   {
     src: "/blogAssets/dockerblog.png",
-    Title: "Dockerize a react app",
+    Title: "Dockerize a react application.",
     link: "https://medium.com/@tilakOli/dockerize-react-app-8c943d7ab6d9",
     linkText: "Read More",
     description:
