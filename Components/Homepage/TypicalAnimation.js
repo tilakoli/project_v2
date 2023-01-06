@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import Typical from "react-typical";
+import TypeWriter from 'typewriter-effect'
 
 const TypicalAnimation = () => {
   return (
@@ -15,16 +15,19 @@ const TypicalAnimation = () => {
           type: "tween",
         }}
       >
-        I am a ______, 😀
+        I am a <span className="capitalize"> 
+        <TypeWriter 
+        options={{
+          autoStart: true,
+          loop: true,
+        }}
+        onInit={
+         ((typewriter) => {
+          typewriter.typeString('Developer!').pauseFor(2000).deleteAll().pauseFor(2000).typeString('Technophile!').pauseFor(2000).deleteAll().pauseFor(2000).typeString('Astrophile!').pauseFor(2000).deleteAll().pauseFor(2000).typeString('codaholic!').pauseFor(2000).deleteAll().start()
+         })
+        }/>
+        </span>
         {/* I am an apostrophe -> just a symbol to remind you that theres more to see  */}
-        {/* I am Saisha`s Love💛! */}
-        {/* <span>
-          <Typical
-            steps={["Developer!", 4000, "Designer!", 4000, "Freelancer!", 4000]}
-            loop={Infinity}
-            wrapper="p"
-          />
-        </span> */}
       </motion.div>
     </div>
   );
