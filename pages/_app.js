@@ -15,12 +15,15 @@ function MyApp({ Component, pageProps }) {
     setLoading(false);
   });
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
-      <motion.div>
-        {loading ? <Loader /> : null}
-        <Component {...pageProps} />
-      </motion.div>
-    </ThemeProvider>
+    <>
+      {loading ? <Loader /> : null}
+
+      <ThemeProvider enableSystem={true} attribute="class">
+        <motion.div>
+          <Component {...pageProps} />
+        </motion.div>
+      </ThemeProvider>
+    </>
   );
 }
 
