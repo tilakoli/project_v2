@@ -1,13 +1,8 @@
-## WORK PALN
-
-2. Investigate how to use the dark mode with particles js.
-3. the current color scheme is boring need help with colors.
-
 ### Note:
 
 - Keep in mind about the responsiveness at md:768px lg:1024px looks really bad in the current state.
-- Learn typescript for the sake of this project please!
 - Need colors that'll blend in with the glassmorphism.
+- Responsiveness on mobile screen for contact page.
 
 ## WORDS
 
