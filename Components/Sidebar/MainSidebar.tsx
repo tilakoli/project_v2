@@ -40,7 +40,7 @@ const MainSidebar = ({ themeToggleButton }) => {
         <CustomCursor variants={variants} animationVariants={cursorVariant} />
         {/* eslint-disable-next-line @next/next/link-passhref */}
         <Link href="/">
-          <div className="flex items-center justify-center border-b-8 dark:border-white border-black h-[17%] cursor-pointer text-xl font-bold ">
+          <div className="flex items-center justify-center border-b dark:border-white border-black h-[17%] cursor-pointer text-xl font-bold ">
             <div
               className="w-min min-h-fit"
               onMouseEnter={onMouseEnter}
@@ -74,7 +74,7 @@ const MainSidebar = ({ themeToggleButton }) => {
             <div></div>
           </div>
         </div>
-        <div className="flex items-center justify-center border-t-8 border-black dark:border-white h-[17%]">
+        <div className="flex items-center justify-center border-t border-black dark:border-white h-[17%]">
           <div
             className="w-min h-min"
             onMouseEnter={onMouseEnter}

@@ -1,6 +1,5 @@
 ### Note:
 
-- Keep in mind about the responsiveness at md:768px lg:1024px looks really bad in the current state.
 - Need colors that'll blend in with the glassmorphism.
 - Responsiveness on mobile screen for contact page.
 
