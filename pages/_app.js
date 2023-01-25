@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import "../styles/globals.css";
