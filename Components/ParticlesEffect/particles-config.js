@@ -134,7 +134,7 @@ const ParticlesConfig = {
       consent: false,
       distance: 100,
       enable: true, // enable/disable links
-      frequency: 0.5,
+      frequency: 0.6,
       opacity: 1,
       shadow: {
         blur: 5,
