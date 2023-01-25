@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tilak-Oli</title>
+        <title>Tilak Oli</title>
       </Head>
       <Layout>
         <Homepage />
