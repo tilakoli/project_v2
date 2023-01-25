@@ -19,7 +19,7 @@ const Index = () => {
   const renderThemeChanger = () => {
     if (!mounted) return;
 
-    const currentTheme = theme === "system" ? systemTheme : theme;
+    const currentTheme = theme === "system" ? "dark" : theme;
 
     if (currentTheme === "dark") {
       return (
