@@ -26,7 +26,12 @@ const ParticlesConfig = {
   fpsLimit: 120,
   interactivity: {
     detectsOn: "window",
+
     events: {
+      onhover: {
+        enable: true,
+        mode: "grab",
+      },
       resize: false,
     },
   },
@@ -64,10 +69,10 @@ const ParticlesConfig = {
       enable: true,
       gravity: {
         // Enable gravity effect for particles
-        acceleration: 1,
-        enable: false,
+        acceleration: 0.3,
+        enable: true,
         inverse: false,
-        maxSpeed: 1,
+        maxSpeed: 0.3,
       },
       outModes: {
         default: "out",
@@ -83,7 +88,7 @@ const ParticlesConfig = {
         acceleration: 0,
         enable: false, // spins the particles
       },
-      straight: true,
+      straight: false,
       trail: {
         enable: false,
         length: 50,
@@ -98,7 +103,7 @@ const ParticlesConfig = {
         factor: 1000,
       },
       limit: 0,
-      value: 40,
+      value: 60,
     },
     opacity: {
       random: {
@@ -128,8 +133,8 @@ const ParticlesConfig = {
       },
       consent: false,
       distance: 100,
-      enable: true,
-      frequency: 1,
+      enable: true, // enable/disable links
+      frequency: 0.5,
       opacity: 1,
       shadow: {
         blur: 5,
@@ -139,8 +144,8 @@ const ParticlesConfig = {
         enable: false,
       },
       triangles: {
-        enable: false,
-        frequency: 1,
+        enable: true,
+        frequency: 0.5,
       },
       width: 1,
       warp: false,
