@@ -141,12 +141,12 @@ export const blogsData = [
       "Dockerizing a react application and enable hot reload with docker-compose.",
   },
   {
-    src: "/blogImage.png",
-    Title: "Blog Two",
-    link: "something.com",
+    src: "/blogAssets/darkmodeblogbanner.png",
+    Title: "Dark Mode with tailwind CSS",
+    link: "https://medium.com/@tilakOli/darkmode-with-tailwindcss-next-js-a-step-by-step-guide-3d2b56412c92",
     linkText: "Read More",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Adding the dark mode feature to your NextJS/ReactJS application with tailiwind CSS.",
   },
   {
     src: "/blogImage.png",

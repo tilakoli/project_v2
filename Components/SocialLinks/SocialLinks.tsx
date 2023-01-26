@@ -2,6 +2,7 @@ import React from "react";
 import { ImFacebook } from "react-icons/im";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
+import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -38,9 +39,9 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }) => {
             stiffness: 120,
           }}
         >
-          <Link href="https://facebook.com">
+          <Link href="https://github.com/tilakoli">
             <a target="_blank">
-              <ImFacebook className="text-black dark:text-white" />
+              <AiFillGithub className="text-black dark:text-white" />
             </a>
           </Link>
         </motion.div>
@@ -55,9 +56,9 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }) => {
             stiffness: 120,
           }}
         >
-          <Link href="https://instagram.com">
+          <Link href="https://facebook.com">
             <a target="_blank">
-              <BsInstagram className="text-black dark:text-white" />
+              <ImFacebook className="text-black dark:text-white" />
             </a>
           </Link>
         </motion.div>

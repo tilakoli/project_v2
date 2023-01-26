@@ -16,16 +16,14 @@ const Card = ({
       <div className="bg-gray-300 w-full h-[60%]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
           src={src}
-          className="object-fill w-full h-full"
+          className="object-fill w-full h-full cursor-default"
           alt="Blogs card image"
         />
       </div>
-      <div
-        className=" w-full h-[40%] flex flex-col justify-around p-5 gap-2 md:gap-5"
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
+      <div className=" w-full h-[40%] flex flex-col justify-around p-5 gap-2 md:gap-5">
         {/* text  */}
         <div className="text-2xl md:text-3xl cursor-text ">{Title}</div>
         <div className=" cursor-text">{description}</div>
