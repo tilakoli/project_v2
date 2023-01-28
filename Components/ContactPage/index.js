@@ -53,7 +53,7 @@ const Index = () => {
     <div className="z-50 flex flex-col items-center justify-center h-screen min-w-full text-black bg-customWhite dark:bg-primaryBlack/50 mt-14 md:mt-0 dark:text-white">
       <CustomCursor variants={variants} animationVariants={cursorVariant} />
       <div className="flex flex-col items-center justify-center gap-2 mt-12 text-3xl font-bold h-28">
-        Contact {/*{infinityVector} */}
+        Contact
         <div className="w-full border border-customBlue"></div>
       </div>
       <div className="flex flex-col items-center justify-center gap-5 p-5 rounded-lg md:gap-20 w-[90%]  md:w-2/3 backdrop-blur-sm bg-black/50 backdropFilter h-96">

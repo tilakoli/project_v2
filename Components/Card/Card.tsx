@@ -12,14 +12,14 @@ const Card = ({
   onMouseLeave,
 }) => {
   return (
-    <div className="w-full backdrop-blur-sm bg-black/30  dark:bg-gray-400/80 dark:backdrop-blur-sm   dark:text-black rounded-md  h-[30rem] md:w-[28rem] cursor-pointer pb-3 gap-2 flex flex-col">
-      <div className="bg-gray-300 w-full h-[60%]">
+    <div className="w-full backdrop-blur-sm bg-black/30   dark:bg-gray-400/80 dark:backdrop-blur-sm   dark:text-black rounded-md  h-[30rem] md:w-[28rem] cursor-pointer pb-3 gap-2 flex flex-col">
+      <div className=" w-full h-[60%]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           src={src}
-          className="object-fill w-full h-full cursor-default"
+          className="object-fill w-full h-full cursor-default "
           alt="Blogs card image"
         />
       </div>

@@ -149,12 +149,12 @@ export const blogsData = [
       "Adding the dark mode feature to your NextJS/ReactJS application with tailiwind CSS.",
   },
   {
-    src: "/blogImage.png",
-    Title: "Blog Three",
-    link: "something.com",
+    src: "/blogAssets/accessibilitybanner.png",
+    Title: "Accessibility in ReactJS",
+    link: "https://medium.com/@tilakOli/a-short-guide-to-accessibility-in-reactjs-and-the-importance-of-aria-for-accessibility-7278139930e9",
     linkText: "Read More",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+      "A short guide to accessibility in ReactJS and the use of ARIA attributes for accessibility!",
   },
 ];
 
@@ -167,5 +167,13 @@ export const projectsData = [
       "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum solut nob est eligendi!",
     link: "http://youtube.com/",
     projectLogo: "/flynepaLogo.png",
+  },
+  {
+    projectFirstName: "Photos",
+    projectSecondName: "Showcase",
+    description:
+      "A personal photos showcase application to present my personal  photos",
+    link: "https://photos-showcase-practice.vercel.app/",
+    projectLogo: "/showcasebanner.png",
   },
 ];

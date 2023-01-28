@@ -23,6 +23,7 @@
 ## TO FIX:
 
 - the background glitches everytime the mouse moves in the blogs page and about me page.
+- Refactor the projects card to be more responsive and how the data is mapped and labels etc.
 - the about me and contact page have issues on mobile screen which doesnt show in the dev tools mobile screen.
 
 ## TODO:
@@ -30,6 +31,7 @@
 - update the about me page.
 - update the projects card details.
 - add email js to the contact form.
+- move the photos showcase logic calculation to another next js project
 
 ## Blogs ideas:
 

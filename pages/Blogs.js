@@ -48,7 +48,7 @@ const Blogs = () => {
       <div className="z-50 flex flex-col items-center justify-center h-full min-w-full pb-5 text-black md:mb-12 bg-customWhite dark:bg-primaryBlack dark:text-white">
         <div className="h-full w-full   md:w-[70%] flex items-start flex-col pt-24 px-5 md:px-0 gap-5">
           <Badge label="Blogs" Heading="My Blogs" />
-          <div className="flex flex-col w-full md:grid gap-y-5 md:grid-flow-row md:grid-cols-2 md:gap-x-10">
+          <div className="flex flex-col w-full md:grid gap-y-16 md:grid-flow-row md:grid-cols-2 md:gap-x-10">
             {blogsData.map((elem, index) => {
               return (
                 <div key={index} className="flex flex-row gap-5">

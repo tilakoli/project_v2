@@ -55,10 +55,10 @@ const Work = () => {
             </div>
 
             <div className="flex flex-col items-center  w-full xl:w-[96%] gap-y-10 md:gap-y-0 md:flex-row md:gap-x-10 xl:justify-around">
-              <div className="rounded-xl bg-[#7a7a7a]">
+              <div className="rounded-[30px] bg-[#7a7a7a]">
                 <TestCard projectsData={projectsData} />
               </div>
-              <div className="rounded-xl bg-[#7a7a7a]">
+              <div className="rounded-[30px] bg-[#7a7a7a]">
                 <TestCard projectsData={projectsData} />
               </div>
             </div>
