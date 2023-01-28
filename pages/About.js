@@ -18,39 +18,39 @@ import DetailsContainer from "../Components/Elements/DetailsContainer";
 //
 
 const About = () => {
-  const [cursorVariant, setCursorVariant] = useState("default");
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  // const [cursorVariant, setCursorVariant] = useState("default");
+  // const [mousePosition, setMousePosition] = useState({
+  //   x: 0,
+  //   y: 0,
+  // });
 
-  useEffect(() => {
-    const onMouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", onMouseMove);
-  }, []);
+  // useEffect(() => {
+  //   const onMouseMove = (e) => {
+  //     setMousePosition({
+  //       x: e.clientX,
+  //       y: e.clientY,
+  //     });
+  //   };
+  //   window.addEventListener("mousemove", onMouseMove);
+  // }, []);
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 16, // subtract half of the div's height & width
-      y: mousePosition.y - 16,
-    },
-    negative: {
-      height: 150,
-      width: 150,
-      backgroundColor: "white",
-      mixBlendMode: "difference",
-      x: mousePosition.x - 75, // subtract half of the div's height & width
-      y: mousePosition.y - 75,
-    },
-  };
+  // const variants = {
+  //   default: {
+  //     x: mousePosition.x - 16, // subtract half of the div's height & width
+  //     y: mousePosition.y - 16,
+  //   },
+  //   negative: {
+  //     height: 150,
+  //     width: 150,
+  //     backgroundColor: "white",
+  //     mixBlendMode: "difference",
+  //     x: mousePosition.x - 75, // subtract half of the div's height & width
+  //     y: mousePosition.y - 75,
+  //   },
+  // };
 
-  const onMouseEnter = () => setCursorVariant("negative");
-  const onMouseLeave = () => setCursorVariant("default");
+  // const onMouseEnter = () => setCursorVariant("negative");
+  // const onMouseLeave = () => setCursorVariant("default");
 
   const handleCvDownload = () => {
     console.log("download");
@@ -64,21 +64,21 @@ const About = () => {
   return (
     <div className="h-full">
       <div className="hidden md:block">
-        <CustomCursor variants={variants} animationVariants={cursorVariant} />
+        {/* <CustomCursor variants={variants} animationVariants={cursorVariant} /> */}
       </div>
       <Layout>
-        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack dark:text-white">
+        <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack/50 dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
             <Badge label="About" Heading="About Me" />
             <div className="w-full h-auto md:h-[40rem] relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+                // onMouseEnter={onMouseEnter}
+                // onMouseLeave={onMouseLeave}
                 src="/background4.jpg"
                 alt="User profile picture"
-                className="object-fill w-full h-full bg-no-repeat bg-cover opacity-80"
+                className="object-fill w-full h-full bg-no-repeat bg-cover "
               />
             </div>
             <div className="">
@@ -119,9 +119,9 @@ const About = () => {
               </div>
               <button
                 onClick={handleCvDownload}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-                className="p-5 text-white uppercase bg-black dark:text-black md:cursor-none dark:bg-white"
+                // onMouseEnter={onMouseEnter}
+                // onMouseLeave={onMouseLeave}
+                className="p-5 text-white uppercase bg-black dark:text-black dark:bg-white/80 "
               >
                 Download cv
               </button>
@@ -130,8 +130,8 @@ const About = () => {
             {/* -------------------------skills ------------------------ */}
             <div
               className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
+              // onMouseEnter={onMouseEnter}
+              // onMouseLeave={onMouseLeave}
             >
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                 <div>{SectionHeading("Programming Skills")}</div>
@@ -166,8 +166,8 @@ const About = () => {
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
             <div
               className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400 dark:text-black"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
+              // onMouseEnter={onMouseEnter}
+              // onMouseLeave={onMouseLeave}
             >
               <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>{SectionHeading("Knowledge")}</div>

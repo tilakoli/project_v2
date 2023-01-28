@@ -12,7 +12,7 @@ const Card = ({
   onMouseLeave,
 }) => {
   return (
-    <div className="w-full backdrop-blur-sm bg-black/30   dark:bg-gray-400/80 dark:backdrop-blur-sm   dark:text-black rounded-md  h-[30rem] md:w-[28rem] cursor-pointer pb-3 gap-2 flex flex-col">
+    <div className="w-full backdrop-blur-sm bg-black/30   dark:bg-gray-400/40 dark:backdrop-blur-sm   dark:text-black rounded-md  h-[30rem] md:w-[28rem] cursor-pointer pb-3 gap-2 flex flex-col">
       <div className=" w-full h-[60%]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

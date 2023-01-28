@@ -22,7 +22,7 @@
 
 ## TO FIX:
 
-- the background glitches everytime the mouse moves in the blogs page and about me page.
+- the background glitche is caused by the cursor animation function maybe defining it everywhere is not a good idea. this issue doesnt happen in contact and home page.
 - Refactor the projects card to be more responsive and how the data is mapped and labels etc.
 - the about me and contact page have issues on mobile screen which doesnt show in the dev tools mobile screen.
 

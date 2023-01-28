@@ -51,7 +51,9 @@ const Index = () => {
 
   return (
     <div className="z-50 flex flex-col items-center justify-center h-screen min-w-full text-black bg-customWhite dark:bg-primaryBlack/50 mt-14 md:mt-0 dark:text-white">
+      {/* <div className="hidden md:block"> */}
       <CustomCursor variants={variants} animationVariants={cursorVariant} />
+      {/* </div> */}
       <div className="flex flex-col items-center justify-center gap-2 mt-12 text-3xl font-bold h-28">
         Contact
         <div className="w-full border border-customBlue"></div>
