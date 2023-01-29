@@ -22,12 +22,15 @@
 
 ## TO FIX:
 
-- the background glitche is caused by the cursor animation function maybe defining it everywhere is not a good idea. this issue doesnt happen in contact and home page.
+- the custom cursor doesn't work properly in firefox browser?
+- the background glitche is caused by the cursor animation function maybe defining it everywhere is not a good idea.
+  NOTE:this issue doesnt happen in contact and home page.
 - Refactor the projects card to be more responsive and how the data is mapped and labels etc.
 - the about me and contact page have issues on mobile screen which doesnt show in the dev tools mobile screen.
 
 ## TODO:
 
+- update about page
 - update the about me page.
 - update the projects card details.
 - add email js to the contact form.
