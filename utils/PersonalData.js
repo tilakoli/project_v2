@@ -177,3 +177,43 @@ export const projectsData = [
     projectLogo: "/showcasebanner.png",
   },
 ];
+
+export const projectsPageTextAnimation = [
+  {
+    lable: "Try",
+    animationDelay: 0.3,
+    animationDuration: 0.7,
+  },
+  {
+    lable: "",
+    animationDelay: 0.5,
+    animationDuration: 0.7,
+  },
+  {
+    lable: "grabbing",
+    animationDelay: 0.7,
+    animationDuration: 0.7,
+  },
+  {
+    lable: " ",
+    animationDelay: 0.9,
+    animationDuration: 0.7,
+  },
+  {
+    lable: "the",
+    animationDelay: 1.1,
+    animationDuration: 0.7,
+  },
+  {
+    lable: " ",
+    animationDelay: 0.9,
+    animationDuration: 0.7,
+  },
+  {
+    lable: "cards.",
+    animationDelay: 1.3,
+    animationDuration: 0.7,
+  },
+];
+
+// grabbing the cards

@@ -1,44 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Layout from "../Layout";
-// import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-// import "react-tabs/style/react-tabs.css";
 import TestCard from "../Components/Card/TestCard";
 import { projectsData } from "../utils/PersonalData";
+import { motion } from "framer-motion";
 import Badge from "../Components/Elements/Badge";
+import ShowCaseNameAnimation from "../Components/Homepage/ShowCaseNameAnimation";
+import { projectsPageTextAnimation } from "../utils/PersonalData";
 
 const Work = () => {
-  // const [currentTab, setCurrentTab] = useState("1");
-  // const tabs = [
-  //   {
-  //     id: 1,
-  //     tabTitle: "Tab 1",
-  //     title: "Title 1",
-  //     content:
-  //       "Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.",
-  //   },
-  //   {
-  //     id: 2,
-  //     tabTitle: "Tab 2",
-  //     title: "Title 2",
-  //     content: "Contenido de tab 2.",
-  //   },
-  //   {
-  //     id: 3,
-  //     tabTitle: "Tab 3",
-  //     title: "Title 3",
-  //     content: "Contenido de tab 3.",
-  //   },
-  //   {
-  //     id: 4,
-  //     tabTitle: "Tab 4",
-  //     title: "Title 4",
-  //     content: "Contenido de tab 4.",
-  //   },
-  // ];
-  // const handleTabClick = (e) => {
-  //   setCurrentTab(e.target.id);
-  // };
-
+  const animateFromSideLeft = {
+    hidden: {
+      x: "300",
+      opacity: 1,
+      rotate: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      rotate: "-90deg",
+      transition: {
+        type: "linear",
+        bounce: 0.4,
+        duration: 0.8,
+        delay: 0.5,
+      },
+    },
+  };
   return (
     <Layout>
       <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black lg:mb-12 bg-customWhite dark:bg-primaryBlack/50 dark:text-white">
@@ -65,6 +52,30 @@ const Work = () => {
           </div>
         </div>
       </div>
+      {/*  <motion.div
+        variants={animateFromSideLeft}
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true, amount: 0.8 }}
+        style={{ zIndex: 99999999999 }}
+        className="fixed w-12 top-[25%] h-96 right-8 bg-orange-300  text-xl capitalize transform -rotate-90 "
+      >
+   
+       {projectsPageTextAnimation.map((letter, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center "
+            >
+              <ShowCaseNameAnimation
+                label={letter.lable}
+                animationDelay={letter.animationDelay}
+                animationDuration={letter.animationDuration}
+              />
+            </div>
+          );
+        })} 
+      </motion.div> */}
     </Layout>
   );
 };
