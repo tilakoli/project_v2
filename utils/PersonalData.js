@@ -1,3 +1,7 @@
+import { AiOutlineMail } from "react-icons/ai";
+import { GoLocation } from "react-icons/go";
+import { FiPhoneCall } from "react-icons/fi";
+
 // ---------HomePage Data ----------
 export const FirstNameNameAnimationConfig = [
   {
@@ -217,3 +221,23 @@ export const projectsPageTextAnimation = [
 ];
 
 // grabbing the cards
+
+// ------------Contact Page Data ---------
+
+export const ContactBlocksData = [
+  {
+    Icon: <AiOutlineMail />,
+    description: "tilak.81oli@gmail.com",
+    title: "Email",
+  },
+  {
+    Icon: <GoLocation />,
+    description: "123 Lorem Ipsum, Mars",
+    title: "Address",
+  },
+  {
+    Icon: <FiPhoneCall />,
+    description: "(+977) *** *** ****",
+    title: "Phone Number",
+  },
+];

@@ -9,7 +9,7 @@ import Link from "next/link";
 const Index = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme, systemTheme } = useTheme();
-  // useState to handle the hydration error -----------------------------
+  // handle the hydration error -----------------------------
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
