@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import { ImFacebook } from "react-icons/im";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
@@ -6,7 +6,12 @@ import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const SocialLinks = ({ onMouseEnter, onMouseLeave }) => {
+type Props = {
+  onMouseEnter: MouseEventHandler;
+  onMouseLeave: MouseEventHandler;
+};
+
+const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
   return (
     <div className="flex items-center justify-end h-full gap-5 text-2xl md:pr-8 md:flex-col pb-14">
       <motion.div

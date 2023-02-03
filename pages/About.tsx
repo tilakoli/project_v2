@@ -13,48 +13,16 @@ import {
   description2,
 } from "../utils/PersonalData";
 import DetailsContainer from "../Components/Elements/DetailsContainer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 // give a different background color to each of the showCase rows with sufficient spacing
 // above and below to break the symmetry of one single box
 //
 
 const About = () => {
-  // const [cursorVariant, setCursorVariant] = useState("default");
-  // const [mousePosition, setMousePosition] = useState({
-  //   x: 0,
-  //   y: 0,
-  // });
-
-  // useEffect(() => {
-  //   const onMouseMove = (e) => {
-  //     setMousePosition({
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     });
-  //   };
-  //   window.addEventListener("mousemove", onMouseMove);
-  // }, []);
-
-  // const variants = {
-  //   default: {
-  //     x: mousePosition.x - 16, // subtract half of the div's height & width
-  //     y: mousePosition.y - 16,
-  //   },
-  //   negative: {
-  //     height: 150,
-  //     width: 150,
-  //     backgroundColor: "white",
-  //     mixBlendMode: "difference",
-  //     x: mousePosition.x - 75, // subtract half of the div's height & width
-  //     y: mousePosition.y - 75,
-  //   },
-  // };
-
-  // const onMouseEnter = () => setCursorVariant("negative");
-  // const onMouseLeave = () => setCursorVariant("default");
-
   const handleCvDownload = () => {
-    console.log("download");
-    alert("Why was the scarecrow hired?");
+    toast.info("I'll add it soon!");
   };
 
   const SectionHeading = (sectionTitle) => (
@@ -66,10 +34,18 @@ const About = () => {
       <div className="hidden md:block">
         {/* <CustomCursor variants={variants} animationVariants={cursorVariant} /> */}
       </div>
+
       <Layout>
         <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack/50 dark:text-white">
           <div className="h-full w-full md:mt-16 rounded-md  md:w-[80%] flex items-start flex-col pt-14 pb-8 px-5 md:px-10 gap-5 ">
             {" "}
+            <ToastContainer
+              autoClose={4000}
+              closeOnClick
+              draggable
+              hideProgressBar={true}
+              // theme={toastTheme}
+            />
             <Badge label="About" Heading="About Me" />
             <div className="w-full h-auto md:h-[40rem] relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -1,6 +1,11 @@
 import React from "react";
 
-const Badge = ({ label, Heading }) => {
+type Props = {
+  label: string;
+  Heading: string;
+};
+
+const Badge = ({ label, Heading }: Props) => {
   return (
     <>
       <div className="p-2 text-black rounded-sm bg-black/50 dark:text-white backdrop-blur-sm dark:bg-customWhite">

@@ -1,7 +1,14 @@
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 
-const DetailsContainer = ({ label, key, value, type = "details" }) => {
+type Props = {
+  label: string;
+  key: number;
+  value?: string;
+  type?: "details" | "bullet" | "skills";
+};
+
+const DetailsContainer = ({ label, key, value, type = "details" }: Props) => {
   if (type === "details") {
     return (
       <div className="flex flex-col gap-2 md:gap-3" key={key}>

@@ -1,6 +1,15 @@
 import Link from "next/link";
-import React from "react";
-import Image from "next/image";
+import React, { MouseEventHandler } from "react";
+
+type Props = {
+  Title: string;
+  src: string;
+  link: string;
+  linkText: string;
+  description: string;
+  onMouseEnter?: MouseEventHandler;
+  onMouseLeave?: MouseEventHandler;
+};
 
 const Card = ({
   src,
@@ -10,11 +19,10 @@ const Card = ({
   description,
   onMouseEnter,
   onMouseLeave,
-}) => {
+}: Props) => {
   return (
     <div className="w-full backdrop-blur-sm bg-black/30   dark:bg-gray-400/40 dark:backdrop-blur-sm   dark:text-black rounded-md  h-[30rem] md:w-[28rem] cursor-pointer pb-3 gap-2 flex flex-col">
       <div className=" w-full h-[60%]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -24,7 +32,6 @@ const Card = ({
         />
       </div>
       <div className=" w-full h-[40%] flex flex-col justify-around p-5 gap-2 md:gap-5">
-        {/* text  */}
         <div className="text-2xl md:text-3xl cursor-text ">{Title}</div>
         <div className=" cursor-text">{description}</div>
         <div>

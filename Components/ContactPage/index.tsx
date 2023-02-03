@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTheme } from "next-themes";
 import { ContactBlocksData } from "../../utils/PersonalData";
+import { ContactBlockTypes } from "./types";
 
 const Index = () => {
   // export const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -46,7 +47,7 @@ const Index = () => {
     },
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs
@@ -70,7 +71,12 @@ const Index = () => {
       );
   };
 
-  const RenderContactBlocks = ({ Icon, description, title, key }) => {
+  const RenderContactBlocks = ({
+    Icon,
+    description,
+    title,
+    key,
+  }: ContactBlockTypes) => {
     return (
       <>
         <div
@@ -134,7 +140,7 @@ const Index = () => {
           className="w-full p-4 bg-transparent border-b outline-none h-96 focus:border-b-0 focus:border-l focus:duration-100 focus:transition-all md:w-full"
           placeholder="Your Message"
         />
-        <Button value="send" />
+        <Button value="send" label=" Send Message" buttonType="submit" />
       </form>
 
       <div

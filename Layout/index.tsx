@@ -2,7 +2,7 @@ import React from "react";
 import ParticlesEffect from "../Components/ParticlesEffect";
 import Sidebar from "../Components/Sidebar";
 
-const Index = ({ children }) => {
+const Index = ({ children }: any) => {
   return (
     <div className="h-full">
       {/* ---------------background particles effect------------ */}
