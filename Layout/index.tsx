@@ -1,21 +1,21 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import ParticlesEffect from "../Components/ParticlesEffect";
 import Sidebar from "../Components/Sidebar";
 
-const Index = ({ children }: any) => {
+type Prop = {
+  children: ReactNode;
+};
+
+const Index = ({ children }: Prop) => {
   return (
     <div className="h-full">
-      {/* ---------------background particles effect------------ */}
       <div className=" -z-50">
         <ParticlesEffect />
       </div>
-
-      {/* -----------main body --------- */}
       <div className="flex flex-col md:flex-row">
         <div>
           <Sidebar />
         </div>
-
         <div className="w-full lg:pl-36">{children}</div>
       </div>
     </div>

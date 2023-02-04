@@ -4,10 +4,10 @@ import Button from "../Elements/button";
 import CustomCursor from "../CustomCursor/CustomCursor";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useTheme } from "next-themes";
 import { ContactBlocksData } from "../../utils/PersonalData";
 import { ContactBlockTypes } from "./types";
+import "react-toastify/dist/ReactToastify.css";
 
 const Index = () => {
   // export const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -23,7 +23,7 @@ const Index = () => {
   });
 
   useEffect(() => {
-    const onMouseMove = (e) => {
+    const onMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
         y: e.clientY,

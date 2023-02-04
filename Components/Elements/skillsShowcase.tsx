@@ -1,6 +1,12 @@
 import React from "react";
 
-const SkillsShowcase = ({ data }) => {
+type Props = {
+  data: {
+    label: string;
+    value: string;
+  }[];
+};
+const SkillsShowcase = ({ data }: Props) => {
   return (
     <div className="flex flex-col w-full h-full gap-2 text-white md:w-1/2 md:gap-3">
       {data.map((elem, index) => {

@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "Components/SocialLinks",
-    "Components/Card"
+    "Components/Card",
+    "Components/ParticlesEffect/index.js"
   ],
   "exclude": ["node_modules"]
 }
