@@ -57,10 +57,6 @@ export const description2 =
   " lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure. adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet,";
 
 export const personalData = [
-  // {
-  //   label: "Birthday",
-  //   value: "1998-04-01",
-  // },
   {
     label: "Age",
     value: "24",
@@ -165,20 +161,18 @@ export const blogsData = [
 // -----------MyWorkPage Data---------
 export const projectsData = [
   {
-    projectFirstName: "lo",
-    projectSecondName: "rem",
-    description:
-      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum solut nob est eligendi!",
-    link: "http://youtube.com/",
-    projectLogo: "/flynepaLogo.png",
+    projectFirstName: "Show",
+    projectSecondName: "case",
+    description: "A personal project to showcase my hobby.",
+    link: "https://my-images-showcase.vercel.app/",
+    projectLogo: "/showcasebanner.png",
   },
   {
-    projectFirstName: "Photos",
-    projectSecondName: "Showcase",
-    description:
-      "A personal photos showcase application to present my personal  photos",
-    link: "https://photos-showcase-practice.vercel.app/",
-    projectLogo: "/showcasebanner.png",
+    projectFirstName: "Fly",
+    projectSecondName: "Nepa",
+    description: "A flight booking system. One of my previous projects.",
+    link: "https://beta.flynepa.com.np/",
+    projectLogo: "/flynepaLogo.png",
   },
 ];
 

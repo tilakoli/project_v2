@@ -34,12 +34,10 @@ const TestCard = (props) => {
         >
           <motion.h1
             style={{ x, y, rotateX, rotateY, z: 100000 }}
-            className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-blue-800 uppercase md:text-5xl top-5"
+            className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-5"
           >
-            {props.projectsData[0].projectFirstName}
-            <span className="text-red-800">
-              {props.projectsData[0].projectSecondName}
-            </span>
+            {props.projectsData?.projectFirstName}
+            <span className="">{props.projectsData?.projectSecondName}</span>
           </motion.h1>
           {/* -------------------card body ----------------- */}
           <motion.div
@@ -47,9 +45,9 @@ const TestCard = (props) => {
             className="flex flex-col gap-5 p-4 text-black  dark:text-[#ffffff]"
           >
             <motion.p className="max-w-[300px] ">
-              {props.projectsData[0].description}
+              {props.projectsData?.description}
             </motion.p>
-            <Link href={props.projectsData[0]?.link}>
+            <Link href={props.projectsData?.link}>
               <a
                 target="_blank"
                 className="capitalize max-w-fit md:text-xl hover:pl-5 hover:transition-all hover:duration-200 hover:border-r hover:pr-4 hover:border-b-0 "
@@ -65,7 +63,7 @@ const TestCard = (props) => {
                     <img
                       alt="used technologies logo"
                       key={index}
-                      src={src.src}
+                      src={src?.src}
                       className="w-8 h-8 rounded-full cursor-pointer"
                     />
                   );
@@ -79,27 +77,28 @@ const TestCard = (props) => {
             className="absolute flex items-center justify-center w-[97%] mx-auto bottom-7 px-3 py-1  bg-white"
           >
             <img
-              src={props.projectsData[0].projectLogo}
+              src={props.projectsData?.projectLogo}
               alt="logo"
               draggable="false"
             />
           </motion.div>
         </motion.div>
       </div>
+      {/* --------------- for mobile with the 3d effect disabled -------------- */}
       <div className="block md:hidden">
         <motion.div className="flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-black/40 backdrop-blur-sm rounded-[30px] border-[1px] text-white border-white px-[40px] pb-[24px]  relative">
           <motion.h1 className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-blue-800 uppercase md:text-5xl top-5">
-            {props.projectsData[0].projectFirstName}
-            <span className="text-red-800">
-              {props.projectsData[0].projectSecondName}
+            {props.projectsData?.projectFirstName}
+            <span className="text-secondary">
+              {props.projectsData?.projectSecondName}
             </span>
           </motion.h1>
           {/* -------------------card body ----------------- */}
           <motion.div className="flex flex-col gap-5 p-4 text-black  dark:text-[#ffffff]">
             <motion.p className="max-w-[300px] ">
-              {props.projectsData[0].description}
+              {props.projectsData?.description}
             </motion.p>
-            <Link href={props.projectsData[0]?.link}>
+            <Link href={props.projectsData?.link}>
               <a
                 target="_blank"
                 className="capitalize max-w-fit md:text-xl hover:pl-5 hover:transition-all hover:duration-200 hover:border-r hover:pr-4 hover:border-b-0 "
@@ -115,7 +114,7 @@ const TestCard = (props) => {
                     <img
                       alt="used technologies logo"
                       key={index}
-                      src={src.src}
+                      src={src?.src}
                       className="w-8 h-8 rounded-full cursor-pointer"
                     />
                   );
@@ -126,7 +125,7 @@ const TestCard = (props) => {
           {/* card image */}
           <motion.div className="absolute flex items-center justify-center w-[97%] mx-auto bottom-4 px-3 py-1  bg-white">
             <img
-              src={props.projectsData[0].projectLogo}
+              src={props?.projectsData?.projectLogo}
               alt="logo"
               draggable="false"
             />

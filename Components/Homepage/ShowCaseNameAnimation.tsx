@@ -2,11 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import TextAnimation from "../TextAnimation/TextAnimation";
 
+type Props = {
+  label: String;
+  animationDelay: number;
+  animationDuration: number;
+};
 const ShowCaseNameAnimation = ({
   label,
   animationDelay,
   animationDuration,
-}) => {
+}: Props) => {
   return (
     <div className="flex">
       {/* initial == animate from  */}

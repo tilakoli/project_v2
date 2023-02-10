@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../Layout/index";
-import CustomCursor from "../Components/CustomCursor/CustomCursor";
+// import CustomCursor from "../Components/CustomCursor/CustomCursor";
 import Badge from "../Components/Elements/Badge";
 import {
   personalData,
@@ -15,7 +15,6 @@ import {
 import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 // give a different background color to each of the showCase rows with sufficient spacing
 // above and below to break the symmetry of one single box
 //
@@ -25,7 +24,7 @@ const About = () => {
     toast.info("I'll add it soon!");
   };
 
-  const SectionHeading = (sectionTitle) => (
+  const SectionHeading = (sectionTitle: string) => (
     <h1 className="text-2xl font-bold underline ">{sectionTitle}</h1>
   );
 
@@ -67,8 +66,7 @@ const About = () => {
               <br />
               <p>{description2}</p>
               <br />
-              {/* -----------------------personal Details --------------------
-               */}
+              {/* -----------------------personal Details -------------------- */}
               <div className="flex flex-col w-full mb-8 md:flex-row">
                 <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                   {personalData.map((elem, index) => {
@@ -111,7 +109,7 @@ const About = () => {
             >
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                 <div>{SectionHeading("Programming Skills")}</div>
-                <div className="">
+                <div className="w-full">
                   {skills.map((elem, index) => {
                     return (
                       <DetailsContainer
