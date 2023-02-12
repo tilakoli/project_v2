@@ -16,7 +16,7 @@ const ProgressBar = ({ width }: Props) => {
         type: "spring",
         stiffness: 120,
       }}
-      className={`w-full h-7 bg-white border-none`}
+      className={`w-full h-5  border-none bg-gray-300 dark:bg-primaryBlack `}
     ></motion.hr>
   );
 };

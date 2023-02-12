@@ -108,6 +108,19 @@ export const skills = [
     languageName: "Css/Scss",
     skillLevel: "80%",
   },
+  {
+    languageName: "Googling",
+    skillLevel: "80%",
+  },
+
+  {
+    languageName: "Typescript",
+    skillLevel: "80%",
+  },
+  {
+    languageName: "FramerMotion",
+    skillLevel: "80%",
+  },
 ];
 
 export const Languages = [
@@ -127,7 +140,13 @@ export const Languages = [
 
 export const Knowledge = ["Bootstrap", "Reactjs", "NextJs", "tailwindcss"];
 
-export const Interests = ["Music", "Books", "Coding", "Experimenting"];
+export const Interests = [
+  "Music",
+  "Coding",
+  "Technology",
+  "Space & Cosmos",
+  "Myths & Legends",
+];
 
 // -----------BlogsPage Data---------
 

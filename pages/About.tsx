@@ -144,19 +144,19 @@ const About = () => {
               // onMouseLeave={onMouseLeave}
             >
               <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
-                <div>{SectionHeading("Knowledge")}</div>
-
-                {Knowledge.map((e, i) => {
-                  return <DetailsContainer key={i} label={e} type="bullet" />;
-                })}
-              </div>
-
-              <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>{SectionHeading("Interests")}</div>
                 {Interests.map((e, i) => {
                   return <DetailsContainer key={i} label={e} type="bullet" />;
                 })}
               </div>
+
+              {/* <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
+                <div>{SectionHeading("Knowledge")}</div>
+
+                {Knowledge.map((e, i) => {
+                  return <DetailsContainer key={i} label={e} type="bullet" />;
+                })}
+              </div> */}
             </div>
           </div>
         </div>

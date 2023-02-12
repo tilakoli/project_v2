@@ -43,13 +43,10 @@ a {
   background: #0d0d0d;
 }
 
-/* ----------- tabs css ------------- */
-
-.tab-button:disabled {
-  background: linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%);
-  color: white;
+.customGradientDark {
+  background: linear-gradient(to right, #e31d1d, #999696);
 }
 
-/* .customGradient {
-  background: linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%);
-} */
+.customGradientLight {
+  background: linear-gradient(to right, #0d0d0d, #999696);
+}

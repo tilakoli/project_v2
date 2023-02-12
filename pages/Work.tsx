@@ -3,7 +3,35 @@ import Layout from "../Layout";
 import TestCard from "../Components/Card/TestCard";
 import { projectsData } from "../utils/PersonalData";
 import Badge from "../Components/Elements/Badge";
+import { motion } from "framer-motion";
 
+const HintText = ({ hint }) => {
+  return (
+    <>
+      <motion.div
+        initial={{
+          opacity: 1,
+          y: -200,
+          rotate: 90,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          rotate: 90,
+          scale: 1,
+          transition: {
+            duration: 0.7,
+            type: "spring",
+            stiffness: 120,
+          },
+        }}
+        className=" hidden fixed dark:text-white text-primaryBlack text-lg md:block right-0 top-[50%] tracking-wider "
+      >
+        {hint}
+      </motion.div>
+    </>
+  );
+};
 const Work = () => {
   return (
     <Layout>
@@ -29,6 +57,7 @@ const Work = () => {
               </div>
             </div>
           </div>
+          {<HintText hint="Try Grabbing the Cards." />}
         </div>
       </div>
     </Layout>

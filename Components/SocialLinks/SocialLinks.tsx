@@ -1,10 +1,10 @@
 import React, { MouseEventHandler } from "react";
-import { ImFacebook } from "react-icons/im";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FiMail } from "react-icons/fi";
 
 type Props = {
   onMouseEnter: MouseEventHandler;
@@ -50,23 +50,7 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
             </a>
           </Link>
         </motion.div>
-        <motion.div
-          className="hover:cursor-pointer "
-          initial={{ x: 15, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 3.6,
-            duration: 0.7,
-            type: "spring",
-            stiffness: 120,
-          }}
-        >
-          <Link href="https://facebook.com">
-            <a target="_blank">
-              <ImFacebook className="text-black dark:text-white" />
-            </a>
-          </Link>
-        </motion.div>
+
         <motion.div
           className="hover:cursor-pointer "
           initial={{ x: 15, opacity: 0 }}
@@ -78,7 +62,7 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
             stiffness: 120,
           }}
         >
-          <Link href="https://linkedin.com">
+          <Link href="https://www.linkedin.com/in/tilakoli/">
             <a target="_blank">
               <FiLinkedin className="text-black dark:text-white" />
             </a>
@@ -95,9 +79,26 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
             stiffness: 120,
           }}
         >
-          <Link href="https://twitter.com">
+          <Link href="https://www.instagram.com/tilakoli64/">
             <a target="_blank">
-              <BsTwitter className="text-black dark:text-white" />
+              <BsInstagram className="text-black dark:text-white" />
+            </a>
+          </Link>
+        </motion.div>
+        <motion.div
+          className="hover:cursor-pointer "
+          initial={{ x: 15, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 3.6,
+            duration: 0.7,
+            type: "spring",
+            stiffness: 120,
+          }}
+        >
+          <Link href="/ContactMe">
+            <a target="_blank">
+              <FiMail className="text-black dark:text-white" />
             </a>
           </Link>
         </motion.div>
