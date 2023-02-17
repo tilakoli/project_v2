@@ -13,7 +13,7 @@ export const NavigationData = [
     datafor: "homeIcon",
   },
   {
-    Name: "About Me",
+    Name: "About",
     link: "/About",
     icon: <BsFillPersonFill />,
     datafor: "about",
@@ -24,21 +24,15 @@ export const NavigationData = [
     icon: <GiNotebook />,
     datafor: "blogs",
   },
-  // {
-  //   Name: "Resume",
-  //   link: "/Resume",
-  //   icon: <RiProfileFill />,
-  //   datafor: "resume",
-  // },
   {
-    Name: "My Work",
+    Name: "Projects",
     link: "/Work",
     icon: <MdOutlineWork />,
     datafor: "work",
   },
 
   {
-    Name: "Contact Me",
+    Name: "Contact",
     link: "/ContactMe",
     icon: <HiMail />,
     datafor: "contact",

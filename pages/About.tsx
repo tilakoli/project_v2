@@ -15,13 +15,10 @@ import {
 import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// give a different background color to each of the showCase rows with sufficient spacing
-// above and below to break the symmetry of one single box
-//
 
 const About = () => {
   const handleCvDownload = () => {
-    toast.info("I'll add it soon!");
+    toast.info("Working on this!");
   };
 
   const SectionHeading = (sectionTitle: string) => (

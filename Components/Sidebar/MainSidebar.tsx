@@ -52,7 +52,7 @@ const MainSidebar = ({ themeToggleButton }) => {
         </Link>
         <div className="flex flex-col items-center justify-between text-[2rem] h-3/5">
           <div className="h-full">
-            <div className="flex flex-col items-center justify-center h-full gap-10">
+            <div className="flex flex-col items-start justify-center h-full gap-7 ">
               {NavigationData.map((elem) => {
                 return (
                   <>
@@ -64,7 +64,10 @@ const MainSidebar = ({ themeToggleButton }) => {
                       className="flex cursor-pointer text-dark dark:text-white justify-evenly "
                     >
                       <Link href={elem.link}>
-                        <a>{elem.icon}</a>
+                        <a className="flex items-center gap-2 text-lg">
+                          {elem.icon}
+                          {elem.Name}
+                        </a>
                       </Link>
                     </div>
                   </>
