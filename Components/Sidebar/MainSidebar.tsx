@@ -64,10 +64,7 @@ const MainSidebar = ({ themeToggleButton }) => {
                       className="flex cursor-pointer text-dark dark:text-white justify-evenly "
                     >
                       <Link href={elem.link}>
-                        <a className="flex items-center gap-2 text-lg">
-                          {elem.icon}
-                          {elem.Name}
-                        </a>
+                        <a className="flex items-center gap-2">{elem.icon}</a>
                       </Link>
                     </div>
                   </>

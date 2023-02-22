@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import Layout from "../Layout/index";
-// import CustomCursor from "../Components/CustomCursor/CustomCursor";
 import Badge from "../Components/Elements/Badge";
 import {
   personalData,
@@ -27,9 +27,7 @@ const About = () => {
 
   return (
     <div className="h-full">
-      <div className="hidden md:block">
-        {/* <CustomCursor variants={variants} animationVariants={cursorVariant} /> */}
-      </div>
+      <div className="hidden md:block"></div>
 
       <Layout>
         <div className="z-50 flex flex-col items-center justify-center h-full min-w-full text-black md:mb-12 bg-customWhite dark:bg-primaryBlack/50 dark:text-white">
@@ -46,8 +44,6 @@ const About = () => {
             <div className="w-full h-auto md:h-[40rem] relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                // onMouseEnter={onMouseEnter}
-                // onMouseLeave={onMouseLeave}
                 src="/background4.jpg"
                 alt="User profile picture"
                 className="object-fill w-full h-full bg-no-repeat bg-cover "
@@ -90,8 +86,6 @@ const About = () => {
               </div>
               <button
                 onClick={handleCvDownload}
-                // onMouseEnter={onMouseEnter}
-                // onMouseLeave={onMouseLeave}
                 className="p-5 text-white uppercase bg-black dark:text-black dark:bg-white/80 "
               >
                 Download cv
@@ -99,11 +93,7 @@ const About = () => {
             </div>
             <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
             {/* -------------------------skills ------------------------ */}
-            <div
-              className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row"
-              // onMouseEnter={onMouseEnter}
-              // onMouseLeave={onMouseLeave}
-            >
+            <motion.div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row">
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
                 <div>{SectionHeading("Programming Skills")}</div>
                 <div className="w-full">
@@ -133,13 +123,9 @@ const About = () => {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
-            <div
-              className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400 dark:text-black"
-              // onMouseEnter={onMouseEnter}
-              // onMouseLeave={onMouseLeave}
-            >
+            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400 dark:text-black">
               <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>{SectionHeading("Interests")}</div>
                 {Interests.map((e, i) => {
