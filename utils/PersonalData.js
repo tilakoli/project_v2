@@ -188,14 +188,15 @@ export const projectsData = [
   {
     projectFirstName: "Show",
     projectSecondName: "case",
-    description: "A personal project to showcase my hobby.",
+    description:
+      "A personal project to showcase some of the images that I took with a simple parallax effect.",
     link: "https://my-images-showcase.vercel.app/",
     projectLogo: "/showcasebanner.png",
   },
   {
     projectFirstName: "Fly",
     projectSecondName: "Nepa",
-    description: "A flight booking system. One of my previous projects.",
+    description: "A flight booking system.One of my previous projects.",
     link: "https://beta.flynepa.com.np/",
     projectLogo: "/flynepaLogo.png",
   },
