@@ -30,11 +30,11 @@ const TestCard = (props) => {
           dragElastic={0.18}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
-          className="flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-black/40 backdrop-blur-sm rounded-[30px] border-[1px] text-white border-white px-[40px] pb-[24px] cursor-grab relative"
+          className="px-5 flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-black/40 backdrop-blur-sm rounded-[30px] border-[1px] text-white border-white  pb-[24px] cursor-grab relative"
         >
           <motion.h1
             style={{ x, y, rotateX, rotateY, z: 100000 }}
-            className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-5"
+            className="absolute left-0 flex items-center justify-start w-full px-5 text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-5"
           >
             {props.projectsData?.projectFirstName}
             <span className="">{props.projectsData?.projectSecondName}</span>
@@ -42,11 +42,9 @@ const TestCard = (props) => {
           {/* -------------------card body ----------------- */}
           <motion.div
             style={{ x, y, rotateX, rotateY, z: 100000 }}
-            className="flex flex-col gap-5 p-4 text-black  dark:text-[#ffffff]"
+            className="flex flex-col gap-5 text-black  dark:text-[#ffffff]"
           >
-            <motion.p className="max-w-[300px] ">
-              {props.projectsData?.description}
-            </motion.p>
+            <motion.p className="">{props.projectsData?.description}</motion.p>
             <Link href={props.projectsData?.link}>
               <a
                 target="_blank"
