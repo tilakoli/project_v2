@@ -42,23 +42,23 @@ const About = () => {
               // theme={toastTheme}
             />
             <Badge label="About" Heading="About Me" />
-            <div className="w-full md:flex  h-auto md:h-[40rem] relative ">
+            <div className="w-full md:flex h-auto md:h-[40rem] relative ">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/background4.jpg"
                 alt="User profile picture"
-                className="object-cover w-1/2 h-full bg-no-repeat bg-contain "
+                className="object-cover w-full h-full bg-no-repeat bg-contain md:w-1/2 "
               />
-              <div className="flex flex-col justify-between w-1/2 p-5">
+              <div className="flex flex-col justify-between w-full p-8 leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
                 <div>
-                  <div className="text-justify text-md md:text-xl">
+                  <div className="text-justify md:text-start text-md md:text-2xl">
                     <p>{description1}</p>
                     <br />
                     <p>{description2}</p>
                   </div>
                 </div>
 
-                <div className="flex items-end justify-end">
+                <div className="flex items-end justify-center mt-8 md:justify-end md:mt-0">
                   <Signature />
                 </div>
               </div>
