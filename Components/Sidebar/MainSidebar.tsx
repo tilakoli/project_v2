@@ -10,7 +10,7 @@ const MainSidebar = ({ themeToggleButton }) => {
     y: 0,
   });
   useEffect(() => {
-    const onMouseMove = (e) => {
+    const onMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
         y: e.clientY,

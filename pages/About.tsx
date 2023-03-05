@@ -15,6 +15,7 @@ import {
 import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Signature from "../Components/Elements/Signature";
 
 const About = () => {
   const handleCvDownload = () => {
@@ -41,57 +42,63 @@ const About = () => {
               // theme={toastTheme}
             />
             <Badge label="About" Heading="About Me" />
-            <div className="w-full h-auto md:h-[40rem] relative">
+            <div className="w-full md:flex  h-auto md:h-[40rem] relative ">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/background4.jpg"
                 alt="User profile picture"
-                className="object-fill w-full h-full bg-no-repeat bg-cover "
+                className="object-cover w-1/2 h-full bg-no-repeat bg-contain "
               />
-            </div>
-            <div className="">
-              <h1 className="text-2xl md:text-4xl">Tilak Oli</h1>
-              <h3 className=" text-md md:text-xl">Web Developer</h3>
-            </div>
-            <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
-            <div className=" text-md md:text-xl">
-              <p>{description1}</p>
-              <br />
-              <p>{description2}</p>
-              <br />
-              {/* -----------------------personal Details -------------------- */}
-              <div className="flex flex-col w-full mb-8 md:flex-row">
-                <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
-                  {personalData.map((elem, index) => {
-                    return (
-                      <DetailsContainer
-                        label={elem.label}
-                        key={index}
-                        value={elem.value}
-                      />
-                    );
-                  })}
+              <div className="flex flex-col justify-between w-1/2 p-5">
+                <div>
+                  <div className="text-justify text-md md:text-xl">
+                    <p>{description1}</p>
+                    <br />
+                    <p>{description2}</p>
+                  </div>
                 </div>
-                <div className="flex w-full h-full md:w-1/2">
-                  {personalDetail2.map((elem, index) => {
-                    return (
-                      <DetailsContainer
-                        label={elem.label}
-                        key={index}
-                        value={elem.value}
-                      />
-                    );
-                  })}
+
+                <div className="flex items-end justify-end">
+                  <Signature />
                 </div>
               </div>
-              <button
+            </div>
+            {/* <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" /> */}
+            <div className=" text-md md:text-xl">
+              {/* -----------------------personal Details -------------------- */}
+
+              {/* <button
                 onClick={handleCvDownload}
                 className="p-5 text-white uppercase bg-black dark:text-black dark:bg-white/80 "
               >
                 Download cv
-              </button>
+              </button> */}
             </div>
             <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
+            {/* <div className="flex flex-col w-full mb-8 md:flex-row">
+              <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
+                {personalData.map((elem, index) => {
+                  return (
+                    <DetailsContainer
+                      label={elem.label}
+                      key={index}
+                      value={elem.value}
+                    />
+                  );
+                })}
+              </div>
+              <div className="flex w-full h-full md:w-1/2">
+                {personalDetail2.map((elem, index) => {
+                  return (
+                    <DetailsContainer
+                      label={elem.label}
+                      key={index}
+                      value={elem.value}
+                    />
+                  );
+                })}
+              </div>
+            </div> */}
             {/* -------------------------skills ------------------------ */}
             <motion.div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row">
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
