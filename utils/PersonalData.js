@@ -51,10 +51,10 @@ export const LastNameAnimationConfig = [
 
 // -----------AboutmePage Data---------
 export const description1 =
-  " lorem ipsum dolor sit amet, consectetur adip occure lorem ipsumdolor sit amet, consectetur adip occure lorem ipsum dolor sit amet, consectetur adip occure lorem ipsum dolor sit amet";
+  "I am a 2* year old FrontEnd developer with a strong passion for creating beautiful and intuitive user experiences and a firm believer in the power of continuous learning and growth, and I am always seeking out new challenges and opportunities to improve my skills.";
 
 export const description2 =
-  "I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.";
+  "As a FrontEnd developer, I specialize in designing and building responsive user interfaces that provide a seamless and enjoyable experience for users. In this portfolio, you will find examples of my work that showcase my creativity, technical expertise, and attention to detail as a FrontEnd developer.";
 
 export const personalData = [
   {
@@ -138,7 +138,13 @@ export const Languages = [
   },
 ];
 
-export const Knowledge = ["Bootstrap", "Reactjs", "NextJs", "tailwindcss"];
+export const Knowledge = [
+  "Figma",
+  "Linux",
+  "Docker",
+  "Tailwindcss",
+  "UI Frameworks",
+];
 
 export const Interests = [
   "Music",

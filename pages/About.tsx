@@ -16,11 +16,12 @@ import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Signature from "../Components/Elements/Signature";
+import { useTheme } from "next-themes";
 
 const About = () => {
-  const handleCvDownload = () => {
-    toast.info("Working on this!");
-  };
+  const { theme } = useTheme();
+
+  const signatureStrokeColor = theme === "dark" ? "White" : "black";
 
   const SectionHeading = (sectionTitle: string) => (
     <h1 className="text-2xl font-bold underline ">{sectionTitle}</h1>
@@ -57,46 +58,11 @@ const About = () => {
                 </div>
 
                 <div className="flex items-end justify-center mt-8 md:justify-end md:mt-0">
-                  <Signature />
+                  <Signature strokeColor={signatureStrokeColor} />
                 </div>
               </div>
             </div>
-            {/* <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" /> */}
-            <div className=" text-md md:text-xl">
-              {/* -----------------------personal Details -------------------- */}
-
-              {/* <button
-                onClick={handleCvDownload}
-                className="p-5 text-white uppercase bg-black dark:text-black dark:bg-white/80 "
-              >
-                Download cv
-              </button> */}
-            </div>
             <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" />
-            {/* <div className="flex flex-col w-full mb-8 md:flex-row">
-              <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
-                {personalData.map((elem, index) => {
-                  return (
-                    <DetailsContainer
-                      label={elem.label}
-                      key={index}
-                      value={elem.value}
-                    />
-                  );
-                })}
-              </div>
-              <div className="flex w-full h-full md:w-1/2">
-                {personalDetail2.map((elem, index) => {
-                  return (
-                    <DetailsContainer
-                      label={elem.label}
-                      key={index}
-                      value={elem.value}
-                    />
-                  );
-                })}
-              </div>
-            </div> */}
             {/* -------------------------skills ------------------------ */}
             <motion.div className="flex flex-col w-full gap-4 p-8 mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black md:gap-0 md:flex-row">
               <div className="flex flex-col w-full h-full gap-2 md:w-1/2 md:gap-3">
@@ -138,13 +104,13 @@ const About = () => {
                 })}
               </div>
 
-              {/* <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
-                <div>{SectionHeading("Knowledge")}</div>
+              <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
+                <div>{SectionHeading("Others")}</div>
 
                 {Knowledge.map((e, i) => {
                   return <DetailsContainer key={i} label={e} type="bullet" />;
                 })}
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
