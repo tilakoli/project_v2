@@ -50,12 +50,10 @@ const About = () => {
                 className="object-cover w-full h-full bg-no-repeat bg-contain md:w-1/2 "
               />
               <div className="flex flex-col justify-between w-full p-8 leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
-                <div>
-                  <div className="text-justify md:text-start text-md md:text-2xl">
-                    <p>{description1}</p>
-                    <br />
-                    <p>{description2}</p>
-                  </div>
+                <div className="text-justify md:text-start text-md md:text-2xl">
+                  <p>{description1}</p>
+                  <br />
+                  <p>{description2}</p>
                 </div>
 
                 <div className="flex items-end justify-center mt-8 md:justify-end md:mt-0">
