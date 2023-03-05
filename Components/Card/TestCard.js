@@ -34,7 +34,7 @@ const TestCard = (props) => {
         >
           <motion.h1
             style={{ x, y, rotateX, rotateY, z: 100000 }}
-            className="absolute left-0 flex items-center justify-start w-full px-5 text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-5"
+            className="absolute left-0 flex items-center justify-start w-full px-5 text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-8"
           >
             {props.projectsData?.projectFirstName}
             <span className="">{props.projectsData?.projectSecondName}</span>
