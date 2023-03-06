@@ -58,7 +58,9 @@ const About = () => {
                 </div>
 
                 <div className="flex items-end justify-center mt-8 md:justify-end md:mt-0">
-                  <Signature strokeColor={signatureStrokeColor} />
+                  <Signature
+                    strokeColor={theme ? signatureStrokeColor : "white"}
+                  />
                 </div>
               </div>
             </div>

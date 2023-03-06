@@ -51,7 +51,7 @@ export const LastNameAnimationConfig = [
 
 // -----------AboutmePage Data---------
 export const description1 =
-  "I am a 2* year old FrontEnd developer with a strong passion for creating beautiful and intuitive user experiences and a firm believer in the power of continuous learning and growth, and I am always seeking out new challenges and opportunities to improve my skills.";
+  "I am a 2* year old Front-End Developer with a strong passion for creating beautiful and intuitive user experiences and a firm believer in the power of continuous learning and growth, and I am always seeking out new challenges and opportunities to improve my skills.";
 
 export const description2 =
   "As a FrontEnd developer, I specialize in designing and building responsive user interfaces that provide a seamless and enjoyable experience for users. In this portfolio, you will find examples of my work that showcase my creativity, technical expertise, and attention to detail as a FrontEnd developer.";
