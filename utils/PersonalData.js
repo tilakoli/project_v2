@@ -86,66 +86,6 @@ export const personalDetail2 = [
   },
 ];
 
-export const skills = [
-  {
-    languageName: "ReactJs",
-    skillLevel: "80%",
-  },
-  {
-    languageName: "NextJs",
-    skillLevel: "80%",
-  },
-
-  {
-    languageName: "Redux",
-    skillLevel: "80%",
-  },
-  {
-    languageName: "JestJs",
-    skillLevel: "80%",
-  },
-  {
-    languageName: "Css/Scss",
-    skillLevel: "80%",
-  },
-  {
-    languageName: "Googling",
-    skillLevel: "80%",
-  },
-
-  {
-    languageName: "Typescript",
-    skillLevel: "80%",
-  },
-  {
-    languageName: "FramerMotion",
-    skillLevel: "80%",
-  },
-];
-
-export const Languages = [
-  {
-    language: "English",
-    languageProficiency: "80%",
-  },
-  {
-    language: "Hindi",
-    languageProficiency: "80%",
-  },
-  {
-    language: "Nepali",
-    languageProficiency: "100%",
-  },
-];
-
-export const Knowledge = [
-  "Figma",
-  "Linux",
-  "Docker",
-  "Tailwindcss",
-  "UI Frameworks",
-];
-
 export const Interests = [
   "Music",
   "Coding",
@@ -189,16 +129,9 @@ export const projectsData = [
     projectFirstName: "Show",
     projectSecondName: "case",
     description:
-      "A personal project to showcase some of the images that I took with a simple parallax effect.",
+      "A personal project to showcase my hobby with simple parallax effect.",
     link: "https://my-images-showcase.vercel.app/",
     projectLogo: "/showcasebanner.png",
-  },
-  {
-    projectFirstName: "Fly",
-    projectSecondName: "Nepa",
-    description: "A flight booking system.One of my previous projects.",
-    link: "https://beta.flynepa.com/",
-    projectLogo: "/flynepaLogo.png",
   },
 ];
 

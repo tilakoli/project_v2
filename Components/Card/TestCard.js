@@ -30,14 +30,14 @@ const TestCard = (props) => {
           dragElastic={0.18}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
-          className="px-5 flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-black/40 backdrop-blur-sm rounded-[30px] border-[1px] text-white border-white  pb-[24px] cursor-grab relative"
+          className="px-5 flex items-center justify-center w-[340px] min-h-[450px] bg-white/60 dark:bg-black/40 backdrop-blur-sm rounded-[20px]  text-white  pb-[24px] cursor-grab relative"
         >
           <motion.h1
             style={{ x, y, rotateX, rotateY, z: 100000 }}
             className="absolute left-0 flex items-center justify-start w-full px-5 text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-8"
           >
             {props.projectsData?.projectFirstName}
-            <span className="">{props.projectsData?.projectSecondName}</span>
+            {props.projectsData?.projectSecondName}
           </motion.h1>
           {/* -------------------card body ----------------- */}
           <motion.div
@@ -69,10 +69,10 @@ const TestCard = (props) => {
               </ul>
             </div>
           </motion.div>
-          {/* card image */}
+          {/*-------------------- card image ---------------- */}
           <motion.div
             style={{ x, y, rotateX, rotateY, z: 100000 }}
-            className="absolute flex items-center justify-center w-[97%] mx-auto bottom-7 px-3 py-1  bg-white"
+            className="absolute w-full px-1 py-1 mx-auto bg-white bottom-5"
           >
             <img
               src={props.projectsData?.projectLogo}
@@ -82,20 +82,25 @@ const TestCard = (props) => {
           </motion.div>
         </motion.div>
       </div>
+      {/* 
+      TODO: find a better way to do this
+      */}
       {/* --------------- for mobile with the 3d effect disabled -------------- */}
       <div className="block md:hidden">
-        <motion.div className="flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-black/40 backdrop-blur-sm rounded-[30px] border-[1px] text-white border-white px-[40px] pb-[24px]  relative">
-          <motion.h1 className="absolute left-0 flex items-center justify-center w-full text-3xl font-extrabold text-blue-800 uppercase md:text-5xl top-5">
+        <motion.div className="px-5 flex items-center justify-center w-[300px] md:w-[340px] min-h-[400px] md:min-h-[450px] bg-white/60 dark:bg-transparent backdrop-blur-sm rounded-[18px]  text-white  pb-[24px] cursor-grab relative">
+          <motion.h1
+            style={{ x, y, rotateX, rotateY, z: 100000 }}
+            className="absolute left-0 flex items-center justify-start w-full px-5 text-3xl font-extrabold text-black capitalize dark:text-secondary md:text-5xl top-8"
+          >
             {props.projectsData?.projectFirstName}
-            <span className="text-secondary">
-              {props.projectsData?.projectSecondName}
-            </span>
+            {props.projectsData?.projectSecondName}
           </motion.h1>
           {/* -------------------card body ----------------- */}
-          <motion.div className="flex flex-col gap-5 p-4 text-black  dark:text-[#ffffff]">
-            <motion.p className="max-w-[300px] ">
-              {props.projectsData?.description}
-            </motion.p>
+          <motion.div
+            style={{ x, y, rotateX, rotateY, z: 100000 }}
+            className="flex flex-col gap-5 text-black  dark:text-[#ffffff]"
+          >
+            <motion.p className="">{props.projectsData?.description}</motion.p>
             <Link href={props.projectsData?.link}>
               <a
                 target="_blank"
@@ -120,10 +125,13 @@ const TestCard = (props) => {
               </ul>
             </div>
           </motion.div>
-          {/* card image */}
-          <motion.div className="absolute flex items-center justify-center w-[97%] mx-auto bottom-4 px-3 py-1  bg-white">
+          {/*-------------------- card image ---------------- */}
+          <motion.div
+            style={{ x, y, rotateX, rotateY, z: 100000 }}
+            className="absolute w-full px-2 py-1 mx-auto bg-white dark:bg-gray-200 bottom-5"
+          >
             <img
-              src={props?.projectsData?.projectLogo}
+              src={props.projectsData?.projectLogo}
               alt="logo"
               draggable="false"
             />
