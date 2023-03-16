@@ -26,7 +26,7 @@ export const NavigationData = [
   },
   {
     Name: "Projects",
-    link: "/Work",
+    link: "/MyProjects",
     icon: <MdOutlineWork />,
     datafor: "work",
   },
