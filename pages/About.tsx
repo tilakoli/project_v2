@@ -62,7 +62,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-            {/* <hr className="hidden w-full h-[2px] border-black border dark:border-customWhite md:block mt-5 mb-4" /> */}
             {/* -------------------------skills ------------------------ */}
             <motion.div className="flex flex-col items-center justify-center w-full mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black">
               <div className="flex items-center w-full pt-5 pl-5">

@@ -15,7 +15,7 @@ export default function Home() {
       "Redux",
       "JestJs",
       "TypeScript",
-      "Googler",
+      "Googling",
       "Git",
       "Linux",
       "Docker",
