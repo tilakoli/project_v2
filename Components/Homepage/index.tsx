@@ -45,7 +45,6 @@ const Index = () => {
 
   return (
     <div className="bg-no-repeat bg-cover dark:bg-black/30 bg-customWhite ">
-      {/* bg-backgroundImage3 */}
       <div className="hidden md:block">
         <CustomCursor variants={variants} animationVariants={cursorVariant} />
       </div>

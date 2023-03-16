@@ -197,7 +197,7 @@ export const projectsData = [
     projectFirstName: "Fly",
     projectSecondName: "Nepa",
     description: "A flight booking system.One of my previous projects.",
-    link: "https://beta.flynepa.com.np/",
+    link: "https://beta.flynepa.com/",
     projectLogo: "/flynepaLogo.png",
   },
 ];
