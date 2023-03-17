@@ -28,16 +28,16 @@ export default function Home() {
     const options = {
       radius:
         window.innerWidth > 1440 ? 500 : window.innerWidth > 713 ? 400 : 150,
-      maxSpeed: "normal",
-      initSpeed: "normal",
-      keep: true,
+      maxSpeed: "fast",
+      initSpeed: "medium",
+      keep: false,
     } as any;
 
     TagCloud(container, texts, options);
   }, []);
   return (
     <>
-      <div className="cursor-pointer text-sphere">
+      <div className="cursor-pointer text-sphere  text-[#1CEA19]">
         <span className="tagcloud"></span>
       </div>
     </>
