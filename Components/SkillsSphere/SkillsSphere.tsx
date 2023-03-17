@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="cursor-pointer text-sphere  text-[#1CEA19]">
+      <div className="cursor-pointer text-sphere  text-[#1CEA19] dark:text-black">
         <span className="tagcloud"></span>
       </div>
     </>

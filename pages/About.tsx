@@ -16,7 +16,9 @@ const About = () => {
   const signatureStrokeColor = theme === "dark" ? "White" : "black";
 
   const SectionHeading = (sectionTitle: string) => (
-    <h1 className="text-2xl font-bold underline ">{sectionTitle}</h1>
+    <h1 className="pb-2 text-2xl font-bold underline md:text-4xl ">
+      {sectionTitle}
+    </h1>
   );
 
   return (
@@ -56,14 +58,14 @@ const About = () => {
               </div>
             </div>
             {/* -------------------------skills ------------------------ */}
-            <motion.div className="flex flex-col items-center justify-center w-full mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400 dark:text-black">
+            <motion.div className="flex flex-col items-center justify-center w-full mt-4 mb-8 text-white bg-black rounded-md dark:bg-gray-400/60 backdrop-blur-sm dark:text-black">
               <div className="flex items-center w-full pt-5 pl-5">
-                <h1 className="text-3xl font-bold md:text-4xl"> My Skills</h1>
+                {SectionHeading("My TechStack")}
               </div>
               <SkillsSphere />
             </motion.div>
             {/* ------------------------------------Knowledge/Interests ------------------------------------ */}
-            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400 dark:text-black">
+            <div className="flex flex-col w-full gap-4 p-8 mb-8 text-white bg-black rounded-md md:mt-4 md:flex-row md:gap-4 dark:bg-gray-400/60 backdrop-blur-sm dark:text-black">
               <div className="flex flex-col w-full h-full gap-2 md:gap-3 md:w-1/2">
                 <div>{SectionHeading("Interests")}</div>
                 {Interests.map((e, i) => {
