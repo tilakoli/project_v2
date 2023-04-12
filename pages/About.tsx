@@ -13,7 +13,7 @@ import SkillsSphere from "../Components/SkillsSphere/SkillsSphere";
 const About = () => {
   const { theme } = useTheme();
 
-  const signatureStrokeColor = theme === "dark" ? "White" : "black";
+  const signatureStrokeColor = theme === "light" ? "black" : "white";
 
   const SectionHeading = (sectionTitle: string) => (
     <h1 className="pb-2 text-2xl font-bold underline md:text-4xl ">
@@ -44,13 +44,14 @@ const About = () => {
                 alt="User profile picture"
                 className="object-cover w-full h-full bg-no-repeat bg-contain md:w-1/2 md:h-[500px] "
               />
-              <div className="flex flex-col justify-between w-full h-auto leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
-                <div className="h-auto text-justify md:pt-0 md:p-8 md:text-start text-md md:text-xl xl:text-2xl">
+              <div className="flex flex-col w-full h-auto leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
+                <div className="h-auto text-justify md:pt-0 md:p-4 md:text-start text-md md:text-lg xl:text-xl">
                   <p>{description1}</p>
+                  <br />
                   <p>{description2}</p>
                 </div>
 
-                <div className="flex items-end justify-center mt-8 md:justify-end">
+                <div className="flex items-end justify-start mt-5 md:justify-end">
                   <Signature
                     strokeColor={theme ? signatureStrokeColor : "white"}
                   />

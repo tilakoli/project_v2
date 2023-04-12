@@ -9,6 +9,7 @@ const Signature = ({ strokeColor }) => {
       transition: {
         duration: 20,
         ease: "linear",
+        delay: 1.7,
       },
     },
   };
