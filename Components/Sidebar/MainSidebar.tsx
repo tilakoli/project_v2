@@ -53,9 +53,9 @@ const MainSidebar = ({ themeToggleButton }) => {
         <div className="flex flex-col items-center justify-between text-[2rem] h-3/5">
           <div className="h-full">
             <div className="flex flex-col items-start justify-center h-full gap-7 ">
-              {NavigationData.map((elem) => {
+              {NavigationData.map((elem, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     {" "}
                     <div
                       onMouseEnter={onMouseEnter}
@@ -67,7 +67,7 @@ const MainSidebar = ({ themeToggleButton }) => {
                         <a className="flex items-center gap-2">{elem.icon}</a>
                       </Link>
                     </div>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </div>

@@ -7,6 +7,7 @@ import {
   FirstNameNameAnimationConfig,
   LastNameAnimationConfig,
 } from "../../utils/PersonalData";
+// import StarsCanvas from "../Stars";
 
 const Index = () => {
   const [cursorVariant, setCursorVariant] = useState("default");

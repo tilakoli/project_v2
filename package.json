@@ -14,6 +14,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@next-tools/dynamic": "0.0.11",
+    "@react-three/drei": "^9.56.24",
+    "@react-three/fiber": "^8.11.1",
     "@vercel/analytics": "^0.1.8",
     "TagCloud": "^2.2.0",
     "classnames": "^2.3.2",
@@ -30,6 +32,7 @@
     "react-toastify": "^9.1.1",
     "react-tooltip": "^4.2.21",
     "react-tsparticles": "^2.1.4",
+    "three": "^0.152.2",
     "tsparticles": "^2.1.4",
     "typewriter-effect": "^2.19.0"
   },
