@@ -1,3 +1,5 @@
+added a staging branch
+
 ### Note:
 
 - Need colors that'll blend in with the glassmorphism.
