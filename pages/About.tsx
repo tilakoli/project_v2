@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Layout from "../Layout/index";
 import Badge from "../Components/Elements/Badge";
-import { Interests, description1, description2 } from "../utils/PersonalData";
+import {
+  Interests,
+  description1,
+  description2,
+  description3,
+} from "../utils/PersonalData";
 import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -40,15 +45,17 @@ const About = () => {
             <div className="relative w-full h-auto md:flex ">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/background4.jpg"
+                src="/profile4.jpg"
                 alt="User profile picture"
-                className="object-cover w-full h-full bg-no-repeat bg-contain md:w-1/2 md:h-[500px] "
+                className="object-cover w-full h-full bg-no-repeat bg-contain md:w-1/2 md:h-[500px] opacity-50 "
               />
               <div className="flex flex-col w-full h-auto leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
                 <div className="h-auto text-justify md:pt-0 md:p-4 md:text-start text-md md:text-lg xl:text-xl">
                   <p>{description1}</p>
                   <br />
                   <p>{description2}</p>
+                  {/* <br /> */}
+                  {/* {description3} */}
                 </div>
 
                 <div className="flex items-end justify-start mt-5 md:justify-end">
