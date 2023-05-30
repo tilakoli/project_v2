@@ -85,7 +85,7 @@ const Index = () => {
             <TypicalAnimation />
           </div>
         </div>
-        <div className=" flex justify-center md:justify-center items-center md:w-[10%] h-auto  md:h-auto bg-red-400">
+        <div className=" flex justify-center md:justify-center items-center md:w-[10%] h-auto  md:h-auto">
           <SocialLinks
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
