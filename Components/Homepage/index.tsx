@@ -49,8 +49,8 @@ const Index = () => {
       <div className="hidden md:block">
         <CustomCursor variants={variants} animationVariants={cursorVariant} />
       </div>
-      <div className="flex flex-col md:flex-row ">
-        <div className="md:w-[90%] flex flex-col items-center pl-[10%]  justify-center h-[calc(100vh-5rem)] md:h-screen text-3xl dark:text-white text-black  md:text-8xl md:pr-56 ">
+      <div className="flex flex-col h-screen md:flex-row">
+        <div className="md:w-[90%] flex flex-col items-center md:pl-[10%] justify-center h-full md:h-screen text-3xl dark:text-white text-black  md:text-8xl md:pr-56 ">
           <div className="flex mb-2 font-bold gap-x-2 md:gap-x-4">
             {/*----------------- firstName--------  */}
             <div className="flex">
@@ -85,7 +85,7 @@ const Index = () => {
             <TypicalAnimation />
           </div>
         </div>
-        <div className=" flex justify-center md:justify-center items-center md:w-[10%]">
+        <div className=" flex justify-center md:justify-center items-center md:w-[10%] h-auto  md:h-auto bg-red-400">
           <SocialLinks
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
