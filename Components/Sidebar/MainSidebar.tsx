@@ -46,7 +46,7 @@ const MainSidebar = ({ themeToggleButton }) => {
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              imɒϱɒꓘ
+              Staging
             </div>
           </div>
         </Link>
