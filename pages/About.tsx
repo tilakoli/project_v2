@@ -2,12 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Layout from "../Layout/index";
 import Badge from "../Components/Elements/Badge";
-import {
-  Interests,
-  description1,
-  description2,
-  description3,
-} from "../utils/PersonalData";
+import { Interests, description1, description2 } from "../utils/PersonalData";
 import DetailsContainer from "../Components/Elements/DetailsContainer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
