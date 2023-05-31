@@ -1,20 +1,6 @@
-added a staging branch
-
 ### Note:
 
 - Need colors that'll blend in with the glassmorphism.
-- Responsiveness on mobile screen for contact page.
-
-## WORDS
-
-- NectoPhile : who loves darkness
-- Pluviophile: loves rain
-- ThallassoPhile : Someone who loves the sea
-- logophile: a lover of words.
-- MeloPhile : someone who loves music
-- Selenophile : who loves the moon
-- technophile: who loves technology
-- codaholic, code Junkie
 
 ## IDEAS
 
@@ -25,15 +11,12 @@ added a staging branch
 ## TO FIX:
 
 - the custom cursor doesn't work properly in firefox browser?
-- the background glitche is caused by the cursor animation function maybe defining it everywhere is not a good idea.
+- the background glitch is caused by the cursor animation function maybe defining it everywhere is not a good idea.
   NOTE:this issue doesnt happen in contact and home page.
 - Refactor the projects card to be more responsive and how the data is mapped and labels etc.
-- the about me and contact page have issues on mobile screen which doesnt show in the dev tools mobile screen.
 
 ## TODO:
 
-- update about page
-- update the about me page.
 - update the projects card details.
 - add email js to the contact form.
 - move the photos showcase logic calculation to another next js project

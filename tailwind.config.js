@@ -12,7 +12,7 @@ module.exports = {
         // secondary: "#C89B7B",
         secondary: "#F8F991",
         customRed: "#A30015",
-        customWhite: "#999696",
+        customWhite: "#c9c0bb",
       },
       customGradient: {
         background:
