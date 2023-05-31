@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider enableSystem={true} attribute="class">
-        {isLoading && <Loader />}
+        {/* {isLoading && <Loader />} */}
         <motion.div>
           <Component {...pageProps} />
           <Analytics />
