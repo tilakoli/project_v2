@@ -68,7 +68,7 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
             </a>
           </Link>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           className="hover:cursor-pointer "
           initial={{ x: 15, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -84,7 +84,7 @@ const SocialLinks = ({ onMouseEnter, onMouseLeave }: Props) => {
               <BsInstagram className="text-black dark:text-white" />
             </a>
           </Link>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           className="hover:cursor-pointer "
           initial={{ x: 15, opacity: 0 }}
