@@ -51,9 +51,9 @@ const About = () => {
             <div className="relative w-full h-auto md:flex ">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/profileImageno.png"
+                src="/profile4.jpg"
                 alt="User profile picture"
-                className="object-cover w-full h-full bg-no-repeat -mt-24 bg-contain md:w-1/2 md:h-[450px] opacity-50"
+                className="object-cover w-full h-full bg-no-repeat  bg-contain md:w-1/2 md:h-[450px] opacity-60"
               />
               <div className="flex flex-col w-full h-auto leading-5 tracking-tighter md:leading-normal md:tracking-normal md:w-1/2">
                 <motion.div className="h-auto text-justify md:pt-0 md:p-4 md:text-start text-md md:text-lg xl:text-xl">
