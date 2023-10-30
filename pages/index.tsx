@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../Layout";
-import Homepage from "../Components/Homepage";
+import LandingPage from "../Components/LandingPage/LandingPage";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
         <title>Tilak Oli</title>
       </Head>
       <Layout>
-        <Homepage />
+        {/* <Homepage /> */}
+        <LandingPage />
       </Layout>
     </div>
   );

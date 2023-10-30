@@ -23,7 +23,7 @@ const DetailsContainer = ({ label, key, value, type = "details" }: Props) => {
       );
     case "bullet":
       return (
-        <motion.div className="flex flex-col gap-2 md:gap-3" key={key}>
+        <motion.div className="flex flex-col h-full justify-evenly" key={key}>
           <div className="flex items-center gap-2 text-lg capitalize md:text-xl">
             <div className="">
               <MdArrowForwardIos />

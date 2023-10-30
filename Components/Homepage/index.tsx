@@ -51,7 +51,7 @@ const Index = () => {
       </div>
       <div className="flex flex-col h-screen md:flex-row">
         <div className="md:w-[90%] flex flex-col items-center md:pl-[10%] justify-center h-full md:h-screen text-3xl dark:text-white text-black  md:text-8xl md:pr-56 ">
-          <div className="flex mb-2 font-bold gap-x-2 md:gap-x-4">
+        <div className="flex mb-2 font-bold gap-x-2 md:gap-x-4">
             {/*----------------- firstName--------  */}
             <div className="flex">
               {FirstNameNameAnimationConfig.map((letter, index) => {

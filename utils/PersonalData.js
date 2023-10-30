@@ -89,6 +89,7 @@ export const personalDetail2 = [
 export const Interests = [
   "Music",
   "Coding",
+  "Science",
   "Technology",
   "Space & Cosmos",
   "Myths & Legends",
@@ -193,4 +194,42 @@ export const ContactBlocksData = [
     description: "(+977) *** *** ****",
     title: "Phone Number",
   },
+];
+
+export const cards = [
+  {
+    url: "/background4.jpg",
+    title: "Title 1",
+    id: 1,
+  },
+  {
+    url: "/background4.jpg",
+    title: "Title 2",
+    id: 2,
+  },
+  {
+    url: "/background4.jpg",
+    title: "Title 3",
+    id: 3,
+  },
+  {
+    url: "/background4.jpg",
+    title: "Title 4",
+    id: 4,
+  },
+  // {
+  //   url: "/background4.jpg",
+  //   title: "Title 5",
+  //   id: 5,
+  // },
+  // {
+  //   url: "/background4.jpg",
+  //   title: "Title 6",
+  //   id: 6,
+  // },
+  // {
+  //   url: "/background4.jpg",
+  //   title: "Title 7",
+  //   id: 7,
+  // },
 ];

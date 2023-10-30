@@ -12,11 +12,8 @@ const Index = ({ children }: Prop) => {
       <div className=" -z-50">
         <ParticlesEffect />
       </div>
-      <div className="flex flex-col md:flex-row">
-        <div>
-          <Sidebar />
-        </div>
-        <div className="w-full lg:pl-36">{children}</div>
+      <div className="flex ">
+        <div className="w-full ">{children}</div>
       </div>
     </div>
   );

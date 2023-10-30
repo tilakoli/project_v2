@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TagCloud from "TagCloud";
 
-export default function Home() {
+export default function Home({ radius }) {
   useEffect(() => {
     const container = Array.from(document.querySelectorAll(".tagcloud")); // had to use Array.from  because of type error on the container
     const texts = [
@@ -26,8 +26,8 @@ export default function Home() {
     ];
 
     const options = {
-      radius:
-        window.innerWidth > 1440 ? 500 : window.innerWidth > 713 ? 400 : 150,
+      radius: radius ? radius : 100,
+      //   window.innerWidth > 1440 ? 500 : window.innerWidth > 713 ? 400 : 150,
       maxSpeed: "fast",
       initSpeed: "medium",
       keep: false,
@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="cursor-pointer text-sphere  text-[#1CEA19] dark:text-black">
+      <div className="text-black cursor-pointer text-sphere dark:text-white">
         <span className="tagcloud"></span>
       </div>
     </>

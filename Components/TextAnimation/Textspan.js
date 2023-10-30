@@ -13,7 +13,7 @@ const Textspan = ({ children }) => {
         "scale3d(.9,1.05,1)",
         "scale3d(1,1,1)",
       ],
-      color: ["#F8F991", "#fff", "#0D0D0D"], //upto 3 colors looks good
+      color: ["#fff", "#fff", "#000"], //upto 3 colors looks good
     };
   };
 
