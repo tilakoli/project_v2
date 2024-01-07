@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ShowCaseNameAnimation from "../Homepage/ShowCaseNameAnimation";
 import Section from "../UpdatedElements/Section";
 import CustomCursor from "../CustomCursor/CustomCursor";
 import "react-toastify/dist/ReactToastify.css";

@@ -4,8 +4,9 @@ import {
   FirstNameNameAnimationConfig,
   LastNameAnimationConfig,
 } from "../../utils/PersonalData";
-import TypicalAnimation from "../Homepage/TypicalAnimation";
-import ShowCaseNameAnimation from "../Homepage/ShowCaseNameAnimation";
+
+import TypicalAnimation from "../NameAnimation/TypicalAnimation";
+import ShowCaseNameAnimation from "../NameAnimation/ShowCaseNameAnimation";
 
 
 const HomePageContent = ({
