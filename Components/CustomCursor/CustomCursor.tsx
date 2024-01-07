@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const CustomCursor = ({ variants, animationVariants }) => {
   return (
     <motion.div
+      transition={{type: 'spring', mass: 1, duration: 1000   }}
       animate={animationVariants ? animationVariants : "default"}
       variants={variants}
       style={{ zIndex: 999999999999 }}

@@ -18,6 +18,9 @@ module.exports = {
         background:
           "linear-gradient(245.39deg, #fc65ed -35.14%, #0500ff 143.06%)",
       },
+      fontFamily: {
+        primary: ['Rubik Scribble', "sans-serif"],
+      },
       backgroundImage: {
         backgroundImage1: "url('/background1.jpg')",
         backgroundImage2: "url('/background2.jpg')",

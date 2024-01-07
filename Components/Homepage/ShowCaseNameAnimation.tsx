@@ -6,16 +6,17 @@ type Props = {
   label: String;
   animationDelay: number;
   animationDuration: number;
+  parallaxValue: number;
 };
+
 const ShowCaseNameAnimation = ({
   label,
   animationDelay,
   animationDuration,
+  parallaxValue
 }: Props) => {
   return (
     <div className="flex">
-      {/* initial == animate from  */}
-      {/* animate == animate to  */}
       <motion.div
         initial={{ y: -300, opacity: 0, rotate: -120 }}
         animate={{ y: 0, opacity: 1, rotate: 0 }}
@@ -26,7 +27,7 @@ const ShowCaseNameAnimation = ({
           stiffness: 120,
         }}
       >
-        <TextAnimation label={label} />
+        <TextAnimation label={label} parallaxValue={parallaxValue} />
       </motion.div>
     </div>
   );

@@ -44,6 +44,7 @@ const Button = ({
       className={`${fontWeightClasses} bg-red flex items-center gap-2 h-10 cursor-pointer border p-4 `}
     >
       <Link
+      passHref
         //   onClick={() => window.alert("Hello there!")}
         href={href}
       >

@@ -11,7 +11,7 @@ const Index = () => {
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {};
+  const particlesLoaded = () => {};
   return (
     <>
       <Particles

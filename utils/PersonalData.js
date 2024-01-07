@@ -8,26 +8,31 @@ export const FirstNameNameAnimationConfig = [
     lable: "T",
     animationDelay: 0.3,
     animationDuration: 0.7,
+    parallaxValue: 56,
   },
   {
     lable: "i",
     animationDelay: 0.5,
     animationDuration: 0.7,
+    parallaxValue: -49,
   },
   {
     lable: "l",
     animationDelay: 0.7,
     animationDuration: 0.7,
+    parallaxValue: 64,
   },
   {
     lable: "a",
     animationDelay: 0.9,
     animationDuration: 0.7,
+    parallaxValue: -57,
   },
   {
     lable: "k",
     animationDelay: 1.1,
     animationDuration: 0.7,
+    parallaxValue: 54,
   },
 ];
 
@@ -36,16 +41,19 @@ export const LastNameAnimationConfig = [
     lable: "O",
     animationDelay: 1.3,
     animationDuration: 0.7,
+    parallaxValue: -49,
   },
   {
     lable: "l",
     animationDelay: 1.5,
     animationDuration: 0.7,
+    parallaxValue: 49,
   },
   {
     lable: "i",
     animationDelay: 1.7,
     animationDuration: 0.7,
+    parallaxValue: -55,
   },
 ];
 

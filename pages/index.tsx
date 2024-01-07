@@ -1,16 +1,31 @@
 import Head from "next/head";
 import Layout from "../Layout";
 import LandingPage from "../Components/LandingPage/LandingPage";
-import About from "./About";
+import { useEffect } from "react";
 
 export default function Home() {
+  // useEffect(() => {
+  //   (async () => {
+  //     // Import Locomotive Scroll
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+  //     const locomotiveScroll = new LocomotiveScroll({
+  //       el: document.querySelector("#main_container"),
+  //       smooth: true,
+  //     });
+
+  //     // Update Locomotive Scroll on component unmount
+  //     return () => {
+  //       locomotiveScroll.destroy();
+  //     };
+  //   })();
+  // }, []);
   return (
-    <div>
+    <div id="main_container">
       <Head>
         <title>Tilak Oli</title>
       </Head>
-      <Layout>
-        {/* <Homepage /> */}
+      <Layout  >
         <LandingPage />
       </Layout>
     </div>

@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Moonrocks&family=Rubik+Scribble&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  scroll-behavior: initial;
   padding: 0;
   margin: 0;
   width: 100%;
   min-height: 100%;
-  /* background-color: rgb(53, 52, 52); */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* overflow-x: hidden; */
-  /* overflow: hidden; */
 }
 
 a {
@@ -21,15 +23,12 @@ a {
   text-decoration: none;
 }
 
-* {
-  /* cursor: none; */
-  /* pointer-events: none; */
-  box-sizing: border-box;
-}
+
 
 /* width */
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  width: 5px;
 }
 
 /* Track */
@@ -39,7 +38,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0d0d0d;
+  background: black;
 }
 
 /* Handle on hover */
@@ -53,24 +52,4 @@ a {
 
 .customGradientLight {
   background: linear-gradient(to right, #0d0d0d, #999696);
-}
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  /* overflow: hidden; */
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
 }
